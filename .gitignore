@@ -1,0 +1,21 @@
+/build
+/generatedFiles
+/cordova
+/node_modules
+/package-lock.json
+/app.watch.lock
+*.log
+.firebase
+
+npm-debug.log
+yarn-error.log
+
+# Editors specific
+.fleet
+.idea
+.vscode
+.cache
+
+
+# Platform specific
+.DS_Store

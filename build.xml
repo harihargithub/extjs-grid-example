@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="appModern" default=".help">
+
+<fileset dir="./" id="regexp.bundle">
+    <filename regex="^main.*([A-Z0-9.])w*(w.)?js" />
+    <exclude name="node_modules/" />
+    <exclude name="app/" />
+    <exclude name="build/" />
+    <exclude name=".sencha/" />
+    <exclude name="packages/" />
+    <exclude name="generatedFiles/" />
+    <exclude name="resources/" />
+  </fileset>
+
+    <script language="javascript">
+<![CDATA[
+  var dir = project.getProperty("basedir"),
+      cmdDir = project.getProperty("cmd.dir"),
+      cmdLoaded = project.getReference("senchaloader");
+  if (!cmdLoaded) {
+    function echo(message, file) {
+      var e = project.createTask("echo");
+      e.setMessage(message);
+      if (file) {
+        e.setFile(file);
+      }
+      e.execute();
+    };
+    if (!cmdDir) {
+      function exec(args) {
+        var process = java.lang.Runtime.getRuntime().exec(args),
+            input = new java.io.BufferedReader(new java.io.InputStreamReader(process.getInputStream())),
+            headerFound = false,
+            line;
+
+        while (line = input.readLine()) {
+          line = line + '';
+          java.lang.System.out.println(line);
+          if (line.indexOf("Sencha Cmd") > -1) {
+            headerFound = true;
+          }
+          else if (headerFound && !cmdDir) {
+            cmdDir = line;
+            project.setProperty("cmd.dir", cmdDir);
+          }
+        }
+        process.waitFor();
+        return !!cmdDir;
+      }
+      if (!exec(["sencha", "which"])) {
+        var tmpFile = "tmp.sh";
+        echo("source ~/.bash_profile; sencha " + whichArgs.join(" "), tmpFile);
+        exec(["/bin/sh", tmpFile]);
+        new java.io.File(tmpFile)['delete'](); 
+      }
+    }
+  }
+  if (cmdDir && !project.getTargets().containsKey("init-cmd")) {
+    var importDir = project.getProperty("build-impl.dir") || 
+                    (cmdDir + "/ant/build/app/build-impl.xml");
+    var importTask = project.createTask("import");
+
+    importTask.setOwningTarget(self.getOwningTarget());
+    importTask.setLocation(self.getLocation());
+    importTask.setFile(importDir);
+    importTask.execute();
+  }
+]]>
+  </script>
+
+  <target name="-before-build">
+    <pathconvert pathsep="$&#123;line.separator&#125;" property="app.webpack.bundle.file" refid="regexp.bundle" />
+    <basename property="app.webpack.bundle" file="$&#123;app.webpack.bundle.file&#125;"/>
+  </target>
+
+  <target name="-after-build">
+    <delete failonerror="true" includeemptydirs="false" verbose="true">
+      <fileset refid="regexp.bundle" />
+    </delete>
+  </target>
+
+  <macrodef name="x-run-build">
+    <attribute name="target"/>
+    <attribute name="theme"/>
+    <attribute name="locale" default="en"/>
+    <attribute name="buildName" default="@{theme}"/>
+    <attribute name="buildId" default="@{theme}-@{locale}"/>
+    <sequential>
+        <if>
+            <equals arg1="@{locale}" arg2=""/>
+            <then>
+                <ant dir="${basedir}" inheritall="false" inheritrefs="true" target="@{target}">
+                    <property name="compiler.ref.id" value="${compiler.ref.id}-@{theme}"/>
+                    <property name="app.theme" value="theme-@{theme}"/>
+                    <property name="app.build.dir.suffix" value="theme-@{theme}"/>
+                    <property name="cmd.dir" value="${cmd.dir}"/>
+                    <property name="build.environment" value="${build.environment}"/>
+                    <property name="build.compression.yui" value="${build.compression.yui}"/>
+                    <property name="build.id" value="@{buildId}"/>
+                    <property name="build.name" value="@{buildName}"/>
+                </ant>
+            </then>
+            <else>
+                <ant dir="${basedir}" inheritall="false" inheritrefs="true" target="@{target}">
+                    <property name="compiler.ref.id" value="${compiler.ref.id}-@{theme}-@{locale}"/>
+                    <property name="app.theme" value="theme-@{theme}"/>
+                    <property name="app.locale" value="@{locale}"/>
+                    <property name="app.build.dir.suffix" value="theme-@{theme}-@{locale}"/>
+                    <property name="cmd.dir" value="${cmd.dir}"/>
+                    <property name="build.environment" value="${build.environment}"/>
+                    <property name="build.compression.yui" value="${build.compression.yui}"/>
+                    <property name="build.id" value="@{buildId}"/>
+                    <property name="build.name" value="@{buildName}"/>
+                </ant>
+            </else>
+        </if>
+    </sequential>
+</macrodef>
+</project>

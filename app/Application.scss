@@ -1,0 +1,224 @@
+// These variables may or may not have already been defined by the theme.
+$app-background-color: dynamic(if($theme-name =='theme-material', $background-color, #fff));
+$app-primary-text-color: dynamic($color);
+$app-secondary-text-color: dynamic(if($theme-name =='theme-neptune', gray, $color));
+
+$danger-color: dynamic(#e53f2c);
+$warning-color: dynamic(#feac31);
+$success-color: dynamic(#27ca37);
+$info-color: dynamic(#3bc9db);
+$enable-font-awesome: true;
+$gridcolumn-drag-icon: dynamic($fa-var-grip-vertical);
+
+
+.text-danger {
+    color: $danger-color;
+}
+
+.text-success {
+    color: $success-color;
+}
+
+.text-warning {
+    color: $warning-color;
+}
+
+.text-info {
+    color: $info-color;
+}
+
+.danger {
+    background-color: $danger-color;
+    @include border-radius(5px);
+}
+
+.success {
+    background-color: $success-color;
+    @include border-radius(5px);
+}
+
+.warning {
+    background-color: $warning-color;
+    @include border-radius(5px);
+}
+
+.menu {
+    @if($theme-name == 'theme-material') {
+        @include icon('menu');
+    }
+
+    @else if($theme-name =='theme-ios') {
+        @include icon($ios-menu);
+    }
+
+    @else {
+        @include icon($fa-var-bars);
+    }
+}
+
+.palette {
+    @if($theme-name == 'theme-material') {
+        @include icon('palette');
+    }
+}
+
+.card {
+    .#{$prefix}innerhtml {
+        text-align: center;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 10px;
+        width: 75%;
+
+        .#{$prefix}phone & {
+            width: auto;
+            padding: 20px;
+        }
+    }
+
+    .action {
+        display: inline-block;
+        background-color: rgba(#000, .06);
+        border: 1px solid rgba(#fff, .1);
+        padding: 1px 5px;
+        @include border-radius(4px);
+        color: #657b83;
+    }
+
+    code {
+        color: #859900;
+    }
+}
+
+@include toolbar-ui($ui: 'transparent',
+    $background-color: transparent,
+    $box-shadow: none,
+    $padding: 8px);
+
+//make shadow on the blue buttons smaller
+.x-phone .x-button.x-shadow {
+    -webkit-box-shadow: 1px 1px $shadow-blur-radius $shadow-width $shadow-color;
+    box-shadow: 1px 1px $shadow-blur-radius $shadow-width $shadow-color;
+}
+
+@include titlebar-ui($ui: 'sencha',
+    $background-color: #024059);
+
+@include button-ui($ui: 'green',
+    $background-color: #95c94b);
+
+@include button-ui($ui: 'danger',
+    $background-color: $danger-color);
+
+@include button-ui($ui: 'info',
+    $background-color: $info-color);
+
+
+
+@include progress-ui($ui: 'danger',
+    $bar-background-color : $danger-color,
+    $background-color: $neutral-color);
+
+@include progress-ui($ui: 'warning',
+    $bar-background-color : $warning-color,
+    $background-color: $neutral-color);
+
+@include progress-ui($ui: 'success',
+    $bar-background-color : $success-color,
+    $background-color: $neutral-color);
+
+@include progress-ui($ui: 'info',
+    $bar-background-color : $info-color,
+    $background-color: $neutral-color);
+
+
+@keyframes spinLeft {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinRight {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.#{$prefix}coresplash {
+    background-color: #eeeeee;
+    background-image: none;
+    cursor: default;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none !important;
+
+    .#{$prefix}coresplash-content {
+        text-align: center;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: center 0;
+
+        .#{$prefix}coresplash-title {
+            font-family: OpenSans;
+            font-size: 18px;
+            font-weight: bold;
+            color: #222222;
+        }
+
+        .#{$prefix}coresplash-message {
+            font-family: OpenSans;
+            font-size: 14px;
+            line-height: 1.57;
+            color: #222222;
+            padding-top: 5px;
+        }
+    }
+
+    .svg-icon {
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .svg-icon-large {
+        width: 6em;
+        height: 6em;
+        animation-duration: 6000ms;
+        animation-name: spinLeft;
+    }
+
+    .svg-icon-small {
+        width: 4em;
+        height: 4em;
+        position: absolute;
+        margin-left: -15px;
+        margin-top: -25px;
+        animation-duration: 4000ms;
+        animation-name: spinRight;
+    }
+
+    .svg-icon path,
+    .svg-icon polygon,
+    .svg-icon rect {
+        fill: #CCCCCC;
+    }
+
+    .svg-icon-small path {
+        stroke: #CCCCCC;
+        stroke-width: .3;
+    }
+}
