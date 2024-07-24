@@ -43,7 +43,7 @@ In this step, you copy the add-ons packages to your project. In this example we 
 Copy the add-ons packages [ext-addons-7.8.0-trial.zip]/packages to [project]/packages/local/.
 
 
-# Step 3: Install npm dependences
+#### Step 3: Install npm dependences
 
 
     $ npm install
