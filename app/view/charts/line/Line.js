@@ -5,7 +5,7 @@ Ext.define('SenchaExample.view.chars.line.Line', {
         'Ext.chart.series.Line',
         'Ext.chart.axis.Category',
         'Ext.chart.axis.Numeric',
-        'Ext.chart.interactions.Crosshair',
+        'Ext.chart.interactions.Crosshair'
     ],
     shadow: 'true',
     insetPadding: '20 20 10 10',
@@ -42,8 +42,7 @@ Ext.define('SenchaExample.view.chars.line.Line', {
         type: 'category',
         position: 'bottom',
         fields: 'fullName',
-        grid: true,
-
+        grid: true
     }],
     series: [{
         type: 'line',

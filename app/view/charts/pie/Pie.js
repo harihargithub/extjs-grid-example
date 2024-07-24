@@ -7,8 +7,6 @@ Ext.define('SenchaExample.view.chars.pie.Pie', {
         'Ext.chart.interactions.ItemHighlight'
     ],
     shadow: 'true',
-
-
     platformConfig: {
         '!phone': {
             legend: {

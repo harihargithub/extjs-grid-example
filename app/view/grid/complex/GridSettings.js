@@ -2,7 +2,7 @@ Ext.define('SenchaExample.view.grid.complex.GridSettings', {
     extend: 'Ext.Panel',
     xtype: 'complexgridsettings',
     bind: {
-        title: '{i18n.SETTINGS}',
+        title: '{i18n.SETTINGS}'
     },
 
     //controller: 'complexgridsettingscontroller',
@@ -17,13 +17,13 @@ Ext.define('SenchaExample.view.grid.complex.GridSettings', {
             shadow: false,
             value: true,
             listeners: {
-                change: 'onGroupGrid',
+                change: 'onGroupGrid'
             }
         },
         {
             xtype: 'fieldset',
             bind: {
-                title: '{i18n.FILTERING_OPTIONS}',
+                title: '{i18n.FILTERING_OPTIONS}'
             },
             items: [{
                 xtype: 'container',
@@ -31,33 +31,33 @@ Ext.define('SenchaExample.view.grid.complex.GridSettings', {
                 items: [{
                     xtype: 'button',
                     bind: {
-                        text: '{i18n.SHOW_FILTERS}',
+                        text: '{i18n.SHOW_FILTERS}'
                     },
                     handler: 'showFiltersHandler'
                 }, {
                     xtype: 'button',
                     bind: {
-                        text: '{i18n.CLEAR_FILTERS}',
+                        text: '{i18n.CLEAR_FILTERS}'
                     },
                     handler: 'clearFilters'
                 }]
             }, {
                 xtype: 'togglefield',
                 bind: {
-                    boxLabel: '{i18n.TOGGLE_FILTERBAR}',
+                    boxLabel: '{i18n.TOGGLE_FILTERBAR}'
                 },
                 margin: null,
                 shadow: false,
                 value: true,
                 listeners: {
-                    change: 'onToggleFilterBarVisibility',
+                    change: 'onToggleFilterBarVisibility'
                 }
             }]
         },
         {
             xtype: 'fieldset',
             bind: {
-                title: '{i18n.SELECTABLE_OPTIONS}',
+                title: '{i18n.SELECTABLE_OPTIONS}'
             },
             items: [{
                 xtype: 'container',
@@ -72,7 +72,7 @@ Ext.define('SenchaExample.view.grid.complex.GridSettings', {
                 },
                 items: [{
                     bind: {
-                        text: '{i18n.SELECTABLE}',
+                        text: '{i18n.SELECTABLE}'
                     },
                     menu: {
                         defaults: {
@@ -84,23 +84,23 @@ Ext.define('SenchaExample.view.grid.complex.GridSettings', {
                             checked: true,
                             bind: {
                                 checked: '{isRows}',
-                                text: '{i18n.ROWS}',
+                                text: '{i18n.ROWS}'
                             }
                         }, {
                             bind: {
-                                text: '{i18n.CELLS}',
+                                text: '{i18n.CELLS}'
                             },
                             fn: 'setCells',
                             checked: true
                         }, {
                             bind: {
-                                text: '{i18n.COLUMNS}',
+                                text: '{i18n.COLUMNS}'
                             },
                             fn: 'setColumns',
                             checked: true
                         }, {
                             bind: {
-                                text: '{i18n.DRAG}',
+                                text: '{i18n.DRAG}'
                             },
                             fn: 'setDrag',
                             checked: true
@@ -135,7 +135,7 @@ Ext.define('SenchaExample.view.grid.complex.GridSettings', {
                             checked: true
                         }, {
                             bind: {
-                                text: '{i18n.BOTH}',
+                                text: '{i18n.BOTH}'
                             },
                             value: true
                         }]
@@ -149,8 +149,8 @@ Ext.define('SenchaExample.view.grid.complex.GridSettings', {
                 padding: '5 10',
                 // html: 'No selection'
                 bind: {
-                    html: '{i18n.NO_SELECTION}',
-                },
+                    html: '{i18n.NO_SELECTION}'
+                }
             }]
         }
     ]

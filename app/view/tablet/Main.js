@@ -28,7 +28,7 @@ Ext.define('SenchaExample.view.tablet.Main', {
             bind: {
                 text: '{i18n.ABOUT}'
             },
-            handler: 'onAboutHandler',
+            handler: 'onAboutHandler'
         }, {
             xtype: 'button',
             align: 'right',
@@ -87,10 +87,10 @@ Ext.define('SenchaExample.view.tablet.Main', {
             xtype: 'complexgridcontainer'
         }, {
             title: 'Ext.grid.TreeGrouped',
-            xtype: 'groupedgridcontainer',
+            xtype: 'groupedgridcontainer'
         }, {
             title: 'Ext.pivot.Grid',
-            xtype: 'pivotgridcontainer',
+            xtype: 'pivotgridcontainer'
         }]
     }]
 });

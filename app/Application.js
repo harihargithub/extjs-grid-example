@@ -8,7 +8,6 @@ Ext.define('SenchaExample.Application', {
         'Ext.state.LocalStorage',
         'Ext.Toast'
     ],
-    // sets up the icon and startup screens for when the app is added to a phone/tablet home screen
     quickTips: {
         tooltip: {
             showOnTap: true

@@ -36,7 +36,7 @@ Ext.define('SenchaExample.view.grid.grouped.Grid', {
         proxy: {
             type: 'ajax',
             limitParam: null,
-            url: '/sencha-examples/api/employee',
+            url: '/sencha-examples/api/employee'
         }
     },
     rowLines: true,
@@ -46,7 +46,7 @@ Ext.define('SenchaExample.view.grid.grouped.Grid', {
         gridsummaries: true,
         gridviewoptions: true,
         grideditable: true,
-        gridfilters: true,
+        gridfilters: true
     },
     itemConfig: {
         viewModel: {
@@ -77,7 +77,7 @@ Ext.define('SenchaExample.view.grid.grouped.Grid', {
                 },
                 items: [{
                     bind: {
-                        text: '{i18n.ALL_FILTERS}',
+                        text: '{i18n.ALL_FILTERS}'
                     },
                     reference: 'allFilter',
                     checked: true,
@@ -159,7 +159,7 @@ Ext.define('SenchaExample.view.grid.grouped.Grid', {
         }
     }, {
         bind: {
-            text: '{i18n.COUNTRY}',
+            text: '{i18n.COUNTRY}'
         },
         width: 200,
         dataIndex: 'countryName',
@@ -177,7 +177,7 @@ Ext.define('SenchaExample.view.grid.grouped.Grid', {
         }
     }, {
         bind: {
-            text: '{i18n.DEPARTMENT}',
+            text: '{i18n.DEPARTMENT}'
         },
         dataIndex: 'department',
         groupable: true,
@@ -196,7 +196,7 @@ Ext.define('SenchaExample.view.grid.grouped.Grid', {
         width: 115
     }, {
         bind: {
-            text: '{i18n.EMAIL}',
+            text: '{i18n.EMAIL}'
         },
         editable: true,
         editor: {
@@ -208,7 +208,7 @@ Ext.define('SenchaExample.view.grid.grouped.Grid', {
         flex: 1
     }, {
         bind: {
-            text: '{i18n.SALARY}',
+            text: '{i18n.SALARY}'
         },
         cell: {
             encodeHtml: false

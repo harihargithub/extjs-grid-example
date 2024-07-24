@@ -2,7 +2,7 @@ Ext.define('SenchaExample.view.FeaturesConfigurator', {
     extend: 'Ext.Panel',
     xtype: 'featuresconfigurator',
     bind: {
-        title: '{i18n.FEATURES}',
+        title: '{i18n.FEATURES}'
     },
     requires: [
         'Ext.panel.Collapser',

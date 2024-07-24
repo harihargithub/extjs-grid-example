@@ -4,7 +4,6 @@ Ext.define('SenchaExample.controller.Main', {
     refs: {
         cardPanel: '#cardPanel',
         contentPanel: 'contentPanel',
-        // sourceOverlay: 'sourceoverlay',
         materialThemeMenuButton: '#materialThemeMenuButton'
     },
 
@@ -113,13 +112,6 @@ Ext.define('SenchaExample.controller.Main', {
             darkMode = Ext.String.trim(darkModeProperty) === 'true',
             isDarkModePreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-        /**
-         * In a build, the path to the `KitchenSink` namespace
-         * is incorrect. Correct it here.
-         */
-        // if (Ext.ClassManager.paths.KitchenSink === 'app') {
-        //     Ext.ClassManager.paths.KitchenSink = 'modern/src';
-        // }
         this.switchColorScheme();
 
     },
@@ -215,7 +207,6 @@ Ext.define('SenchaExample.controller.Main', {
                 change: 'onDarkModeChange',
                 scope: me
             },
-            //value: Ext.String.trim(window.getComputedStyle(document.body).getPropertyValue('--dark-mode')) === 'true',
             bind:{
                 value: '{darkMode}',
                 boxLabel: '{i18n.DARK_MODE}',
@@ -260,7 +251,6 @@ Ext.define('SenchaExample.controller.Main', {
         });
 
         return items.concat(me.getAvailableLocales());
-        // return items;
     },
 
     parseAvailableThemes: function (me) {
@@ -331,6 +321,4 @@ Ext.define('SenchaExample.controller.Main', {
             return locale;
         };
     }
-
-    
 });

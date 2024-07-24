@@ -44,10 +44,8 @@ Ext.define('SenchaExample.view.desktop.MainController', {
             layout: 'fit',
             items: [{
                 xtype: 'formpanel',
-                //layout: 'form', 
                 defaults: {
-                    labelAlign: 'top',
-                    //labelWidth: 180,
+                    labelAlign: 'top'
                 },
                 items: [{
                     xtype: 'displayfield',
@@ -77,6 +75,4 @@ Ext.define('SenchaExample.view.desktop.MainController', {
             }]
         }).show();
     }
-
-    
 });

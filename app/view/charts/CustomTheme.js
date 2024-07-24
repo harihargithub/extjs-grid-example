@@ -89,7 +89,7 @@ Ext.define('SenchaExample.view.charts.CustomTheme', {
             '#9B59B6',
             '#4ac0f2',
             '#ff8809',
-            '#6FECD1',
+            '#6FECD1'
         ]
     }
 });

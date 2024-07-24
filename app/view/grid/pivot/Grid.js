@@ -136,7 +136,7 @@ Ext.define('SenchaExample.view.grid.pivot.Grid', {
                     type: 'default'
                 },
                 bind: {
-                    userCls: '{record.isRowGroupHeader:pick("","pivotCellGroupHeader")}',
+                    userCls: '{record.isRowGroupHeader:pick("","pivotCellGroupHeader")}'
                 }
             },
             

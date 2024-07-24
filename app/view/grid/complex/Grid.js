@@ -36,7 +36,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
             url: '/sencha-examples/api/employee',
             reader: {
                 type: 'json',
-                rootProperty: 'data',
+                rootProperty: 'data'
                 // Do not attempt to load orders inline.
                 // They are loaded through the proxy
             }
@@ -103,7 +103,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
                                     store: '{salaries}',
                                     // theme: '{menuGroups.charttheme}'
                                 },
-                                theme: 'custom-theme',
+                                theme: 'custom-theme'
                             },
                             fusionChartsConfig: {
                                 //TODO - Phase 2
@@ -116,7 +116,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
                                 bind: {
                                     store: '{salaries}'
                                 },
-                                theme: 'custom-theme',
+                                theme: 'custom-theme'
                             },
                             fusionChartsConfig: {
                                 //TODO - Phase 2
@@ -130,7 +130,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
                             bind: {
                                 store: '{salaries}'
                             },
-                            theme: 'custom-theme',
+                            theme: 'custom-theme'
                         },
                         fusionChartsConfig: {
                             //TODO - Phase 2
@@ -143,7 +143,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
                             bind: {
                                 store: '{salaries}'
                             },
-                            theme: 'custom-theme',
+                            theme: 'custom-theme'
                         },
                         fusionChartsConfig: {
                             //TODO - Phase 2
@@ -156,7 +156,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
                             bind: {
                                 store: '{salaries}'
                             },
-                            theme: 'custom-theme',
+                            theme: 'custom-theme'
                         },
                         fusionChartsConfig: {
                             //TODO - Phase 2
@@ -240,7 +240,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
     listeners: {
         documentsave: 'onDocumentSave',
         beforedocumentsave: 'onBeforeDocumentSave',
-        columnmenucreated: 'onColumnMenuCreated',
+        columnmenucreated: 'onColumnMenuCreated'
     },
 
     items: [{
@@ -350,7 +350,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
                         fullName: '{record.fullName}'
                     },
                     height: 30, // Set appropriate height
-                    width: 30, // Set appropriate width
+                    width: 30 // Set appropriate width
                 }]
             }
         }
@@ -412,7 +412,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
         filterType: 'string'
     }, {
         bind: {
-            text: '{i18n.PROGRESS}',
+            text: '{i18n.PROGRESS}'
         },
         width: 150,
         ignoreExport: true,
@@ -451,14 +451,14 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
         ignore: true,
         width: 90,
         bind: {
-            text: '{i18n.VERIFIED}',
+            text: '{i18n.VERIFIED}'
         },
         cell: {
             xtype: 'checkcell'
         },
     }, {
         bind: {
-            text: '{i18n.LINK}',
+            text: '{i18n.LINK}'
         },
         width: 80,
         align: 'center',
@@ -474,11 +474,11 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
         ]
     }, {
         bind: {
-            text: '{i18n.RATINGS}',
+            text: '{i18n.RATINGS}'
         },
         columns: [{
             bind: {
-                text: '{i18n.AVERAGE}',
+                text: '{i18n.AVERAGE}'
             },
             xtype: 'numbercolumn',
             dataIndex: 'averageRating',
@@ -515,7 +515,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
         }]
     }, {
         bind: {
-            text: '{i18n.JOIN_DATE}',
+            text: '{i18n.JOIN_DATE}'
         },
         dataIndex: 'joinDate',
         filterType: 'date',
@@ -539,7 +539,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
         }]
     }, {
         bind: {
-            text: '{i18n.SLIDER_BOUND_TO_AGE}',
+            text: '{i18n.SLIDER_BOUND_TO_AGE}'
         },
         width: 120,
         ignoreExport: true,
@@ -553,12 +553,12 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
                 bind: {
                     hidden: '{record.isSummary}',
                     value: '{record.age}'
-                },
+                }
             }
         }
     }, {
         bind: {
-            tooltip: '{i18n.COLOR}',
+            tooltip: '{i18n.COLOR}'
         },
         text: '<span class="x-fa fa-tshirt"></span>',
         width: 110,
@@ -579,7 +579,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
         }
     }, {
         bind: {
-            text: '{i18n.NOTICE_PERIOD}',
+            text: '{i18n.NOTICE_PERIOD}'
         },
         width: 120,
         dataIndex: 'noticePeriod',
@@ -587,7 +587,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
         editable: true
     }, {
         bind: {
-            text: '{i18n.EMAIL}',
+            text: '{i18n.EMAIL}'
         },
         dataIndex: 'email',
         filterType: 'string',
@@ -598,7 +598,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
         width: 250
     }, {
         bind: {
-            text: '{i18n.ABSENCES}',
+            text: '{i18n.ABSENCES}'
         },
         defaults: {
             exportStyle: {
@@ -611,7 +611,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
             xtype: 'numbercolumn',
             // text: 'Illness',
             bind: {
-                text: '{i18n.ILLNESS}',
+                text: '{i18n.ILLNESS}'
             },
             dataIndex: 'sickDays',
             filterType: 'number',
@@ -620,7 +620,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
         }, {
             xtype: 'numbercolumn',
             bind: {
-                text: '{i18n.HOLIDAYS}',
+                text: '{i18n.HOLIDAYS}'
             },
             dataIndex: 'holidayDays',
             filterType: 'number',
@@ -628,7 +628,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
             format: '0'
         }, {
             bind: {
-                text: '{i18n.HOLIDAY_ALLOWANCE}',
+                text: '{i18n.HOLIDAY_ALLOWANCE}'
             },
             dataIndex: 'holidayAllowance',
             filterType: 'number',
@@ -637,7 +637,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
         }]
     }, {
         bind: {
-            text: '{i18n.RATING_THIS_YEAR}',
+            text: '{i18n.RATING_THIS_YEAR}'
         },
         dataIndex: 'ratingThisYear',
         formatter: 'round(1)',
@@ -715,7 +715,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
         }
     }, {
         bind: {
-            text: '{i18n.ACTIONS}',
+            text: '{i18n.ACTIONS}'
         },
         width: 80,
         ignoreExport: true,
@@ -759,7 +759,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
                 width: 80, // Set appropriate width
             }, {
                 bind: {
-                    text: '{i18n.EDIT}',
+                    text: '{i18n.EDIT}'
                 },
                 separator: true,
                 margin: '10 0 0',
@@ -767,14 +767,14 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
                 iconCls: 'x-fa fa-cog'
             }, {
                 bind: {
-                    text: '{i18n.SHARE}',
+                    text: '{i18n.SHARE}'
                 },
                 handler: 'tryExtJS',
                 margin: '10 0 0',
                 iconCls: 'x-far fa-share-square'
             }, {
                 bind: {
-                    text: '{i18n.RATE_SPEAKER}',
+                    text: '{i18n.RATE_SPEAKER}'
                 },
                 handler: 'tryExtJS',
                 margin: '10 0 0',

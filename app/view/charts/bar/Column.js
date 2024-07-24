@@ -20,7 +20,6 @@ Ext.define('SenchaExample.view.chars.bar.Column', {
         type: 'category',
         position: 'bottom',
         fields: 'fullName',
-        //title: 'i18n.Employee',
         grid: true,
         label: {
             rotate: {

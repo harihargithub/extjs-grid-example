@@ -33,14 +33,14 @@ Ext.define('SenchaExample.view.desktop.Main', {
         },{
             xtype: 'button',
             align: 'right',
+            iconCls: 'x-fab fa-react',
             bind: {
-                text: '{i18n.TRY_EXTJS}'
+                text: '{i18n.REACT_EXAMPLE}'
             },
             ui: 'green',
             handler: function (button) {
-                window.open('https://www.sencha.com/products/extjs/evaluate/', '_blank');
+                window.open('https://www.sencha.com/reactgrid', '_blank');
             }
-            //tooltip: 'Evaluate Ext JS Trial Now'
         }, {
             align: 'right',
             id: 'materialThemeMenuButton',
@@ -49,16 +49,14 @@ Ext.define('SenchaExample.view.desktop.Main', {
                 itemId: 'materialThemeMenu'
             },
             iconCls: 'palette',
-            arrow: false,
-            //tooltip: 'Change theme color'
+            arrow: false
         }, {
             align: 'right',
             menu: {
                 itemId: 'burgerButtonMenu'
             },
             iconCls: 'menu',
-            arrow: false,
-            //tooltip: 'Change theme and/or localization'
+            arrow: false
         }]
     },
     {
@@ -71,7 +69,6 @@ Ext.define('SenchaExample.view.desktop.Main', {
                 iconAlign: 'top'
             }
         },
-
         items: [{
             // tab: {
             //     bind: {
@@ -82,10 +79,10 @@ Ext.define('SenchaExample.view.desktop.Main', {
             xtype: 'complexgridcontainer'
         }, {
             title: 'Ext.grid.TreeGrouped',
-            xtype: 'groupedgridcontainer',
+            xtype: 'groupedgridcontainer'
         }, {
             title: 'Ext.pivot.Grid',
-            xtype: 'pivotgridcontainer',
+            xtype: 'pivotgridcontainer'
         }]
     }]
 });

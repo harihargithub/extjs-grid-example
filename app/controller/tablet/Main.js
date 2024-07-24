@@ -4,17 +4,16 @@ Ext.define('SenchaExample.controller.tablet.Main', {
     getAvailableThemes: function () {
         var items = this.callParent();
 
-        // items.push({
-        //     bind: {
-        //         text: '{i18n.REACT_EXAMPLE}',
-        //     },
-        //     // iconCls: 'x-fa fa-react',
-        //     iconCls: 'x-fa fa-external-link-alt',
-        //     separator: true,
-        //     handler: function () {
-                
-        //     }
-        // });
+        items.push({
+            bind: {
+                text: '{i18n.REACT_EXAMPLE}',
+            },
+            iconCls: 'x-fab fa-react',
+            separator: true,
+            handler: function () {
+                window.open('https://www.sencha.com/reactgrid', '_blank');
+            }
+        });
 
         items.push({
             bind: {
@@ -38,16 +37,15 @@ Ext.define('SenchaExample.controller.tablet.Main', {
             },
             iconCls: 'x-fab fa-discord',
             href: 'https://discord.gg/RfxMGSbHXT',
-            target: '_blank'            
+            target: '_blank'
         });
         items.push({
-            text:'GitHub',
+            text: 'GitHub',
             iconCls: 'x-fab fa-github',
             href: 'https://github.com/sencha-extjs-examples/extjs-grid-example',
-            target: '_blank'            
+            target: '_blank'
         });
 
         return items;
     }
-
 });

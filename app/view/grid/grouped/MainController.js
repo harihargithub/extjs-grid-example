@@ -6,6 +6,5 @@ Ext.define('SenchaExample.view.grid.grouped.MainController', {
         const me = this;
 
         me.grid = me.lookup('groupedGrid');
-
     }
 });

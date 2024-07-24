@@ -13,11 +13,9 @@ $avatar-border-radius: dynamic(50%);
     width: 30px;
     padding: 2px;
     color: $base-dark-color;
-    //font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
-    //font-family: Arial, sans-serif;
     text-transform: uppercase;
     &.large {
         height: 48px;

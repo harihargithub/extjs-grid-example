@@ -76,7 +76,7 @@ Ext.define('SenchaExample.view.phone.Main', {
             xtype: 'groupedgridcontainer',
         }, {
             title: 'Ext.pivot.Grid',
-            xtype: 'pivotgridcontainer',
+            xtype: 'pivotgridcontainer'
         }]
     }]
 });
