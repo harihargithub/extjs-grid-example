@@ -1,0 +1,188 @@
+{
+    "name": "SenchaExample",
+    "namespace": "SenchaExample",
+    "version": "1.0.0.0",
+    "framework": "ext",
+    "template": "universalmodern",
+    "indexHtmlPath": "index.html",
+    "toolkit": "modern",
+    "buildTimestamp": "${build.timestamp}",
+    "requires": [
+        "font-awesome",
+        "ux",
+        "pivot",
+        "exporter",
+        "charts",
+        "locale",
+        "pivot-locale"
+    ],
+    "locales": [
+        "pt",
+        "en",
+        "es",
+        "it",
+        "fr",
+        "de"
+    ],
+    "themes": [
+        "theme-material",
+        "theme-triton",
+        "theme-ios",
+        "theme-neptune"
+    ],
+    "material": {
+        "toolbar": {
+            "color": "#1976d2",
+            "dynamic": true
+        }
+    },
+    "classpath": [
+        "app"
+    ],
+    "overrides": [
+        "overrides",
+        "${app.dir}/locale/${app.locale}"
+    ],
+    "sass": {
+        "namespace": "SenchaExample",
+        "etc": [
+            "sass/etc/all.scss"
+        ],
+        "var": [
+            "sass/var/all.scss",
+            "sass/var",
+            "${theme.name}/sass/var/all.scss"
+        ],
+        "src": [
+            "sass/src",
+            "${theme.name}/sass/src"
+        ]
+    },
+    "resources": [
+        {
+            "path": "resources",
+            "output": "shared"
+        }
+    ],
+    "output": {
+        "base": "${workspace.build.dir}/${build.environment}/${app.name}",
+        "page": "index.html",
+        "manifest": "generatedFiles/${build.id}.json",
+        "js": {
+            "path": "generatedFiles/${build.id}/app.js",
+            "version": "NEXT"
+        },
+        "appCache": {
+            "enable": false
+        },
+        "resources": {
+            "path": "${build.id}/resources",
+            "shared": "resources",
+            "images": "${build.id}/resources/images"
+        }
+    },
+    "fashion": {
+        "missingParameters": "error",
+        "inliner": {
+            "enable": false
+        }
+    },
+    "js": [
+        {
+            "path": "resources/lib/i18next.min.js",
+            "includeInBundle": false,
+            "remote": true
+        }
+    ],
+    "css": [
+        {
+            "path": "${build.out.css.path}",
+            "bundle": true,
+            "exclude": [
+                "fashion"
+            ]
+        }
+    ],
+    "loader": {
+        "cache": false,
+        "cacheParam": "_dc"
+    },
+    "production": {
+        "js": [
+            {
+                "path": "app.js",
+                "bundle": true
+            },
+            {
+                "path": "${app.webpack.bundle}",
+                "compress": false
+            }
+        ],
+        "output": {
+            "appCache": {
+                "enable": false,
+                "path": "cache.appcache"
+            }
+        },
+        "loader": {
+            "cache": "${build.timestamp}"
+        },
+        "cache": {
+            "enable": true
+        },
+        "compressor": {
+            "type": "yui"
+        }
+    },
+    "testing": {
+        "js": [
+            {
+                "path": "app.js",
+                "bundle": true
+            },
+            {
+                "path": "${app.webpack.bundle}",
+                "compress": false
+            }
+        ]
+    },
+    "development": {
+        "js": [
+            {
+                "path": "app.js",
+                "bundle": true
+            },
+            {
+                "path": "main.js"
+            }
+        ],
+        "watch": {
+            "delay": 250
+        }
+    },
+    "bootstrap": {
+        "base": "${app.dir}",
+        "manifest": "generatedFiles/${build.id}.json",
+        "microloader": "generatedFiles/bootstrap.js",
+        "css": "generatedFiles/bootstrap.css"
+    },
+    "cache": {
+        "enable": false,
+        "deltas": "${build.id}/deltas"
+    },
+    "appCache": {
+        "cache": [
+            "index.html"
+        ],
+        "network": [
+            "*"
+        ],
+        "fallback": []
+    },
+    "archivePath": "archive/${build.id}",
+    "slicer": null,
+    "ignore": [
+        "(^|/)CVS(/?$|/.*?$)"
+    ],
+    "id": "3b0f461c-7bc0-469c-aa3d-fd4c61f78f9e"
+}

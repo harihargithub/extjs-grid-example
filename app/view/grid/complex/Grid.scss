@@ -1,0 +1,22 @@
+.under4 {
+    color: $danger-color;
+}
+
+.under5 {
+    color: $warning-color;
+}
+
+.under6 {
+    color: $info-color;
+}
+
+.over6 {
+    color: $success-color;
+}
+
+.big-data-ratings-cell .x-body-el {
+    font-weight: bold;
+}
+
+@include button-ui($ui: 'primary',
+    $background-color: $info-color);
