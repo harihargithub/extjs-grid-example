@@ -63,7 +63,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
     groupHeader: {
         tpl: [
             '<tpl if="groupField == \'countryName\'">',
-            '<img src="/resources/shared/images/flags/w20/{[values.children[0].data["countryCode"]]}.png"/>',
+            '<img src="resources/shared/images/flags/w20/{[values.children[0].data["countryCode"]]}.png"/>',
             '</tpl> ',
             '<tpl if="groupField == \'color\'">',
             '<span style="color: {[values.children[0].data["color"]]};" class="x-fa fa-tshirt"></span>',
@@ -251,10 +251,9 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
             xtype: 'button',
             ui: 'primary',
             bind: {
-                text: '{i18n.NEW}',
-                tooltip: '{i18n.TOOLTIP_EXAMPLE}'
+                text: '{i18n.TRY_EXTJS}'
             },
-            handler: 'onAddButtonTap'
+            handler: 'onTryButtonTap'
         }, {
             xtype: 'spacer'
         }, {
@@ -400,7 +399,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
         },
         // summaryRenderer: null,
         renderer: function (value, record, dataIndex, cell, column) {
-            return '<span><img src="/resources/shared/images/flags/w20/' + record.get('countryCode') + '.png" /> ' + record.get('countryName') + '</span>';
+            return '<span><img src="resources/shared/images/flags/w20/' + record.get('countryCode') + '.png" /> ' + record.get('countryName') + '</span>';
         }
     }, {
         bind: {

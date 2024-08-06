@@ -178,8 +178,8 @@ Ext.define('SenchaExample.view.grid.complex.GridController', {
         }]);
     },
 
-    onAddButtonTap: function (button) {
-        Ext.Msg.alert(i18next.t('TRY_EXTJS'), i18next.t('TRY_EXTJS'));
+    onTryButtonTap: function (button) {
+        window.open('https://www.sencha.com/products/extjs/', '_blank');
     },
 
     onGear: function () {

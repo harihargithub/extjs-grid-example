@@ -170,7 +170,7 @@ Ext.define('SenchaExample.view.grid.grouped.Grid', {
         },
         renderer: function (value, record, dataIndex, cell, column) {
             if (record && value) {
-                return '<span><img src="/resources/shared/images/flags/w20/' + record.get("countryCode") + '.png" /> ' + record.get("countryName") + '</span>';
+                return '<span><img src="resources/shared/images/flags/w20/' + record.get("countryCode") + '.png" /> ' + record.get("countryName") + '</span>';
             } else {
                 return "";
             }
