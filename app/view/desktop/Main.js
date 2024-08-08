@@ -27,7 +27,7 @@ Ext.define('SenchaExample.view.desktop.Main', {
             iconCls: 'x-fab fa-youtube',
             xtype: 'button',
             handler: function (button) {
-                window.open('https://www.youtube.com/@Sencha', '_blank');
+                window.open('https://www.youtube.com/watch?v=2Rkv9NuhJ-8', '_blank');
             },
             style: 'padding-right: 10px'
         },{
