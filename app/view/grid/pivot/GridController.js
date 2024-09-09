@@ -1,15 +1,9 @@
+const exportUtils = require('../util/exportUtils');
+
 Ext.define('SenchaExample.view.grid.pivot.GridController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.pivotgridcontroller',
 
-    requires: [
-        'Ext.exporter.text.CSV',
-        'Ext.exporter.text.TSV',
-        'Ext.exporter.text.Html',
-        'Ext.exporter.excel.Xml',
-        'Ext.exporter.excel.Xlsx',
-        'Ext.exporter.excel.PivotXlsx'
-    ],
     destroy: function() {
         Ext.destroy(this.menuExport);
     },

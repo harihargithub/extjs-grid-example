@@ -15,7 +15,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
         'Ext.grid.plugin.ColumnResizing',
         'Ext.grid.plugin.MultiSelection',
         'Ext.grid.plugin.RowExpander',
-        'Ext.grid.plugin.Exporter',
+        // 'Ext.grid.plugin.Exporter',
         'Ext.data.validator.Bound',
         'Ext.sparkline.Line',
         'Ext.ux.rating.Picker',
@@ -213,7 +213,7 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
                 gridviewoptions: true, //Does not work with Locked grid
                 summaryrow: true,
                 rowexpander: true,
-                gridexporter: true,
+                // gridexporter: true,
                 gridfilterbar: true,
                 // Propagates numeric values when the selection is extended in the Y axis
                 clipboard: true,
@@ -223,10 +223,10 @@ Ext.define('SenchaExample.view.grid.complex.Grid', {
         '!desktop': {
             plugins: {
                 grideditable: true,
-                gridexporter: true,
+                // gridexporter: true,
                 gridviewoptions: true,
                 rowexpander: true,
-                gridexporter: true,
+                // gridexporter: true,
                 gridfilterbar: true,
                 gridrowdragdrop: {
                     dragIcon: true,

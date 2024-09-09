@@ -1,14 +1,8 @@
+const exportUtils = require('../util/exportUtils');
+
 Ext.define('SenchaExample.view.grid.complex.GridController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.complexgridcontroller',
-
-    requires: [
-        'Ext.exporter.text.CSV',
-        'Ext.exporter.text.TSV',
-        'Ext.exporter.text.Html',
-        'Ext.exporter.excel.Xml',
-        'Ext.exporter.excel.Xlsx'
-    ],
 
     init: function (view) {
         const me = this;

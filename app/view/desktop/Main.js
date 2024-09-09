@@ -20,9 +20,10 @@ Ext.define('SenchaExample.view.desktop.Main', {
             cls: ['ext', 'ext-sencha'],
             style: 'padding-right: 10px'
         }, {
-            bind: {
-                text: '{i18n.VIDEO_TOUR}',
-            },
+            //bind: {
+              //  text: '{i18n.VIDEO_TOUR}',
+            //},
+            text: 'Video Tour',
             align: 'right',
             iconCls: 'x-fab fa-youtube',
             xtype: 'button',
@@ -82,7 +83,7 @@ Ext.define('SenchaExample.view.desktop.Main', {
             xtype: 'groupedgridcontainer'
         }, {
             title: 'Ext.pivot.Grid',
-            xtype: 'pivotgridcontainer'
+            xtype: 'newpivotgridcontainer' // Updated xtype to match the new PivotTable implementation
         }]
     }]
 });

@@ -1,6 +1,6 @@
 Ext.define('SenchaExample.view.grid.pivot.Main', {
     extend: 'Ext.Container',
-    xtype: 'pivotgridcontainer',
+        xtype: 'newpivotgridcontainer', // Updated xtype to match the new PivotTable implementation
     controller: 'complexpivotgridmaincontroller',
     layout: {
         type: 'hbox'

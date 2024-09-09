@@ -90,7 +90,7 @@ Ext.define('SenchaExample.view.tablet.Main', {
             xtype: 'groupedgridcontainer'
         }, {
             title: 'Ext.pivot.Grid',
-            xtype: 'pivotgridcontainer'
+                        xtype: 'newpivotgridcontainer' // Updated xtype to match the new PivotTable implementation
         }]
     }]
 });

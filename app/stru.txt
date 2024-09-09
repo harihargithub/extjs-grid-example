@@ -1,0 +1,88 @@
+App
+┣ 📂controller
+┃ ┣ 📂desktop
+┃ ┃ ┗ 📜Main.js
+┃ ┣ 📂phone
+┃ ┃ ┗ 📜Main.js
+┃ ┣ 📂tablet
+┃ ┃ ┗ 📜Main.js
+┃ ┗ 📜Main.js
+┣ 📂model
+┃ ┣ 📜Base.js
+┃ ┣ 📜Employee.js
+┃ ┗ 📜Sale.js
+┣ 📂profile
+┃ ┣ 📜Base.js
+┃ ┣ 📜Desktop.js
+┃ ┣ 📜Phone.js
+┃ ┗ 📜Tablet.js
+┣ 📂samples
+┃ ┗ 📂data
+┃   ┣ 📜Company.js
+┃   ┣ 📜Employee.js
+┃   ┣ 📜Init.js
+┃   ┗ 📜PivotData.js
+┣ 📂util
+┃ ┣ 📜exportUtils.js
+┃ ┣ 📜Localization.js
+┃ ┗ 📜Splashscreen.js
+┣ 📂ux
+┃ ┣ 📜Avatar.js
+┃ ┣ 📜Avatar.scss
+┃ ┗ 📜SectorProgress.js
+┣ 📂view
+┃ ┣ 📂charts
+┃ ┃ ┣ 📂bar
+┃ ┃ ┃ ┣ 📜Bar.js
+┃ ┃ ┃ ┗ 📜Column.js
+┃ ┃ ┣ 📂line
+┃ ┃ ┃ ┗ 📜Line.js
+┃ ┃ ┣ 📂pie
+┃ ┃ ┃ ┣ 📜Donut.js
+┃ ┃ ┃ ┗ 📜Pie.js
+┃ ┃ ┣ 📜CustomTheme.js
+┃ ┃ ┗ 📜Dialog.js
+┃ ┣ 📂desktop
+┃ ┃ ┣ 📜Main.js
+┃ ┃ ┣ 📜MainController.js
+┃ ┃ ┗ 📜NavigationBar.js
+┃ ┣ 📂grid
+┃ ┃ ┣ 📂complex
+┃ ┃ ┃ ┣ 📜ComplexGridRowModel.js
+┃ ┃ ┃ ┣ 📜Grid.js
+┃ ┃ ┃ ┣ 📜Grid.scss
+┃ ┃ ┃ ┣ 📜GridController.js
+┃ ┃ ┃ ┣ 📜GridSettings.js
+┃ ┃ ┃ ┣ 📜Main.js
+┃ ┃ ┃ ┗ 📜MainController.js
+┃ ┃ ┣ 📂grouped
+┃ ┃ ┃ ┣ 📜Grid.js
+┃ ┃ ┃ ┣ 📜GridController.js
+┃ ┃ ┃ ┣ 📜Main.js
+┃ ┃ ┃ ┗ 📜MainController.js
+┃ ┃ ┗ 📂pivot
+┃ ┃   ┣ 📜Grid.js
+┃ ┃   ┣ 📜Grid.scss
+┃ ┃   ┣ 📜GridController.js
+┃ ┃   ┣ 📜GridSettings.js
+┃ ┃   ┣ 📜Main.js
+┃ ┃   ┣ 📜MainController.js
+┃ ┃   ┗ 📜PivotCellModel.js
+┃ ┣ 📂phone
+┃ ┃ ┣ 📜Main.js
+┃ ┃ ┗ 📜Main.scss
+┃ ┣ 📂tablet
+┃ ┃ ┣ 📜Main.js
+┃ ┃ ┗ 📜NavigationBar.js
+┃ ┣ 📂viewport
+┃ ┃ ┣ 📜ViewportController.js
+┃ ┃ ┗ 📜ViewportModel.js
+┃ ┗ 📜FeaturesConfigurator.js
+┣ 📜Application.js
+┣ 📜Application.scss
+┣ 📜sencha-error-20240907-1.log
+┣ 📜sencha-error-20240907.log
+┣ 📜sencha-error-20240909-3.log
+┣ 📜sencha-error-20240909-4.log
+┣ 📜sencha-error-20240909-5.log
+┗ 📜sencha-error-20240909.log
