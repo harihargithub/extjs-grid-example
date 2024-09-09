@@ -10,25 +10,15 @@
     "requires": [
         "font-awesome",
         "ux",
-        "pivot",
-        "exporter",
         "charts",
-        "locale",
-        "pivot-locale"
+        "locale"
     ],
     "locales": [
-        "pt",
-        "en",
-        "es",
-        "it",
-        "fr",
-        "de"
+        "en"
     ],
     "themes": [
         "theme-material",
-        "theme-triton",
-        "theme-ios",
-        "theme-neptune"
+        "theme-triton"
     ],
     "material": {
         "toolbar": {
@@ -92,6 +82,10 @@
             "path": "resources/lib/i18next.min.js",
             "includeInBundle": false,
             "remote": true
+        },
+        {
+            "path": "node_modules/@nebula.js/sn-pivot-table/dist/sn-pivot-table.js",
+            "bundle": true
         }
     ],
     "css": [
