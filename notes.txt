@@ -1,0 +1,14 @@
+
+app.json - 
+"requires": [
+        "font-awesome",
+        "ux",
+        "pivot",
+        "exporter",
+        "charts",
+        "locale",
+        "pivot-locale"
+    ],
+
+    Temporarily removed the "pivot", "exporter" and "pivot-locale" from the requires array in app.json file. 
+    

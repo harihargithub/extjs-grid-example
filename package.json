@@ -29,6 +29,8 @@
     "testing:phone": "npm run clean && cross-env webpack --env treeshake=yes --env cmdopts=--testing --env cmdopts=--build=phone"
   },
   "dependencies": {
+    "@nebula.js/sn-pivot-table": "^3.9.2",
+    "@opentelemetry/exporter-zipkin": "^1.26.0",
     "@sencha/ext": "~7.8.0",
     "@sencha/ext-charts": "~7.8.0",
     "@sencha/ext-modern": "~7.8.0",
@@ -37,7 +39,8 @@
     "@sencha/ext-modern-theme-material": "~7.8.0",
     "@sencha/ext-modern-theme-neptune": "~7.8.0",
     "@sencha/ext-modern-theme-triton": "~7.8.0",
-    "@sencha/ext-ux": "~7.8.0",    
+    "@sencha/ext-ux": "~7.8.0",
+    "advanced-grid": "file:",
     "i18next": "^23.10.1"
   },
   "devDependencies": {
