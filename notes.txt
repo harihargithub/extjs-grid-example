@@ -1,6 +1,26 @@
 
+
+https://youtu.be/z-R6EvfTJEs?si=WlzMFnsrKB2pkF6P
+
 app.json - 
-"requires": [
+   ],
+    "locales": [
+        "pt",
+        "en",
+        "es",
+        "it",
+        "fr",
+        "de"
+    ],
+    "themes": [
+        "theme-material",
+        "theme-triton",
+        "theme-ios",
+        "theme-neptune"
+    ],
+
+    changed to
+    "requires": [
         "font-awesome",
         "ux",
         "pivot",
@@ -9,6 +29,37 @@ app.json -
         "locale",
         "pivot-locale"
     ],
+    "locales": [
+        "en"
+    ],
+    "themes": [
+        "theme-material"
+    ],
 
-    Temporarily removed the "pivot", "exporter" and "pivot-locale" from the requires array in app.json file. 
+
+    pivot, pivot-locale and exporter was available on clicking the add-on link received in email "Welcome to Sencha Ext JS 30-day Free Trial! - Request for Clarification Regarding "ux" and "charts" for ux & charts clicked the Ext JS Quick Start guide and on seach found it in https://docs.sencha.com/extjs/7.8.0/guides/getting_started/getting_started_addons/getting_started_with_npm.html
+  accordingly following process worked well -
+  (base) PS C:\Users\nhari\bin\senchacommunity\npm\node_modules\@sencha\extjs-grid-example> npm login
+npm notice Log in on https://registry.npmjs.org/
+Login at:
+https://www.npmjs.com/login?next=/login/cli/bf78dcdf-3254-4548-ad5c-dffb5078166e
+Press ENTER to open in the browser...
+
+Logged in on https://registry.npmjs.org/.
+(base) PS C:\Users\nhari\bin\senchacommunity\npm\node_modules\@sencha\extjs-grid-example> npm install @sencha/ext-ux @sencha/ext-charts
+
+removed 7 packages, and audited 688 packages in 7s
+
+108 packages are looking for funding
+  run `npm fund` for details
+
+2 high severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+(base) PS C:\Users\nhari\bin\senchacommunity\npm\node_modules\@sencha\extjs-grid-example> npm start
+
+
     

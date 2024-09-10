@@ -17,18 +17,10 @@
         "pivot-locale"
     ],
     "locales": [
-        "pt",
-        "en",
-        "es",
-        "it",
-        "fr",
-        "de"
+        "en"
     ],
     "themes": [
-        "theme-material",
-        "theme-triton",
-        "theme-ios",
-        "theme-neptune"
+        "theme-material"
     ],
     "material": {
         "toolbar": {

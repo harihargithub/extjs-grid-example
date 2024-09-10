@@ -41,7 +41,8 @@
     "@sencha/ext-modern-theme-triton": "~7.8.0",
     "@sencha/ext-ux": "~7.8.0",
     "advanced-grid": "file:",
-    "i18next": "^23.10.1"
+    "i18next": "^23.10.1",
+    "ux": "^0.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
