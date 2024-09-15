@@ -61,5 +61,26 @@ To address all issues, run:
 Run `npm audit` for details.
 (base) PS C:\Users\nhari\bin\senchacommunity\npm\node_modules\@sencha\extjs-grid-example> npm start
 
+workspace.json updated as follows:
+{
+  "apps": [
+    "packages/local/demo/.sencha/temp/Themer"
+  ],
+  "frameworks": {
+    "ext": {
+      "path": "node_modules/@sencha/ext",
+      "version": "7.8.0.33"
+    }
+  },
+  "build": {
+    "dir": "${workspace.dir}/build"
+  },
+  "packages": {
+    "dir": "${workspace.dir}/packages/local,${workspace.dir}/packages,${workspace.dir}/node_modules/@sencha/ext,${workspace.dir}/node_modules/@sencha/ext-ux,${workspace.dir}/node_modules/@sencha/ext-charts",
+    "extract": "${workspace.dir}/packages/remote"
+  }
+}
+
+(base) PS C:\Users\nhari\bin\senchacommunity\npm\node_modules\@sencha\extjs-grid-example\app> npm start
 
     
