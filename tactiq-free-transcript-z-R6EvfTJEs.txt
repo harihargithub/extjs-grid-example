@@ -1,0 +1,1237 @@
+# tactiq.io free youtube transcript
+# Building Complex Data Grids With Ext JS and React
+# https://www.youtube.com/watch/z-R6EvfTJEs
+
+00:00:07.359 hello everyone how are you doing
+00:00:09.719 guys thanks for joining to my my webinar
+00:00:13.639 today we're going to talking about
+00:00:15.160 building complex data geds with exgs and
+00:00:18.320 react we have a lot of cool things here
+00:00:21.000 to share some good examples we have
+00:00:23.480 prepared weeks ago so my name is Janu I
+00:00:27.960 am s developer advocate
+00:00:30.800 and also CIO at noan a Brazilian company
+00:00:33.840 and software housing noan I'm working
+00:00:36.399 with exgs since the second version of
+00:00:39.000 the framework I started using framework
+00:00:42.120 as a developer I also helped the
+00:00:45.079 community to grow and also learn a lot
+00:00:47.600 of the community today I am developer
+00:00:50.239 Advocate and also manage all the MVP and
+00:00:52.640 all the customer and developer
+00:00:55.680 relationship with
+00:00:57.079 CA uh so what is the agenda for our
+00:01:02.760 today webinar we are going to talk about
+00:01:05.000 the hjs GD Advantage also explor one ejs
+00:01:08.799 grid sample we have created and also
+00:01:11.439 explore one he GD grid sample Rea is one
+00:01:16.360 package that you can use exgs components
+00:01:18.600 inside react framework and the end of
+00:01:21.280 this webinar feel free you you can also
+00:01:23.960 ask some questions and you can put these
+00:01:26.079 questions on our question panels inside
+00:01:28.920 this go webinar control panel and in the
+00:01:31.759 end of this webinar we are going to try
+00:01:33.479 to answer all the question you may have
+00:01:36.079 all right so let's get
+00:01:39.240 started so I can say you that our exgs
+00:01:42.520 is the most complets GD in the world
+00:01:45.320 with exgs grid you can do everything you
+00:01:49.000 need for your for creating your reach
+00:01:51.079 applications you you have one
+00:01:54.719 buin G GD panel that you can use for
+00:01:58.680 columns you can too many components
+00:02:01.159 inside this grid pen you can use store
+00:02:03.320 you can use all the the type of columns
+00:02:06.840 so you can create better application
+00:02:09.679 with our grid panel so why exgs grid
+00:02:14.519 panel uh we have one exception
+00:02:17.000 exceptional performance for handling
+00:02:19.000 large volumes of data you can easily
+00:02:22.400 bind your ejs with some back end and all
+00:02:26.560 the your back end you just need to
+00:02:28.120 provide the Jone data and you can load
+00:02:30.760 easily your data inside our grid panel
+00:02:34.640 you also have one syron loading
+00:02:36.519 supporting for data loading allad your
+00:02:38.720 data to be loaded and displayed as you
+00:02:40.680 needed reducing the initial load page
+00:02:43.200 data you don't need to create tables for
+00:02:44.920 that you just need to create one proxy
+00:02:46.959 and everything will work with good
+00:02:50.319 performance and we also have one
+00:02:52.200 flexibility in customization with exgs
+00:02:55.239 grid you can customize everything you
+00:02:57.680 need you can everything is made
+00:03:00.400 with components right so you can extend
+00:03:02.959 our grid panel and customize adding new
+00:03:05.640 columns you can disable or add new
+00:03:08.360 plugins for that new fees you can use
+00:03:11.920 for format on your cells on your columns
+00:03:14.680 you can also make it grouping you can do
+00:03:17.680 some some conditional calculation in
+00:03:20.280 inside your
+00:03:21.680 C uh and as you know our grid component
+00:03:25.560 and all the components inside the hjs is
+00:03:28.080 is one is everything about comp ization
+00:03:31.040 that you can custom components
+00:03:33.720 everything we have some Advanced
+00:03:35.799 features inside exgs grid you can
+00:03:39.000 Dynamic grouping and filtering if you
+00:03:41.439 have one Jone with all your data you can
+00:03:44.480 filter your data you can group in
+00:03:46.599 locally or remotely you can choose what
+00:03:49.760 you want on this
+00:03:51.799 scenario um you also have many cool
+00:03:55.280 plugins for to work with xjs grid you
+00:03:59.360 can do some inline editing you can edit
+00:04:02.879 yourself you can double click your your
+00:04:05.400 column or your row and you can edit all
+00:04:08.519 the record inside the same grid and
+00:04:10.680 everything youest you do is just to
+00:04:13.239 commit the chain and your proxy will
+00:04:16.399 receive the chains on your back end and
+00:04:18.478 everything will be changing on your
+00:04:20.238 database so working with in lineing Ting
+00:04:22.919 is very very cool and easy we also have
+00:04:25.840 some premium components that can work
+00:04:28.000 with hjs grid one that of this company
+00:04:31.440 data export you can easily export your
+00:04:34.400 datas in various formats such as Excel
+00:04:37.800 CSV PDF if you have one library to to
+00:04:41.199 convert it to PDF but you have one
+00:04:44.440 buing plugin and One Premium component
+00:04:47.919 that you can export your data of your
+00:04:51.639 grid panel to one Excel easily you don't
+00:04:54.520 need any backend Sol solution for that
+00:04:57.120 you just need to specify the plugin
+00:04:59.960 exporter you you want to use and just
+00:05:03.000 click and and just program how how the
+00:05:06.000 format will be performed on this grid
+00:05:09.759 exporter another thing here is is
+00:05:11.919 Advantage for using hjs we have a
+00:05:13.720 comprehens comprehensive integration and
+00:05:16.479 support uh yjs are available for both to
+00:05:20.039 kits for to Kit modern and classic so
+00:05:22.520 you have multi device
+00:05:24.440 compatibility you can create fully
+00:05:27.160 responsive application withjs grid pen
+00:05:29.759 that we adapts perfectly to different
+00:05:31.440 screen size so you can use the grid
+00:05:33.960 panel inside your phone inside your
+00:05:35.919 tablet and also in your desktop for both
+00:05:38.919 modern and classic tokit we also have
+00:05:42.000 one easy APA integration when using hjs
+00:05:45.520 you you need to to to create your store
+00:05:49.160 to to store all your data and also you
+00:05:52.199 need to create one proxy the proxy will
+00:05:54.520 be responsible
+00:05:56.639 to to do the bridge between the CL
+00:05:59.639 client side and the server side and we
+00:06:02.520 support many type of proxy one the most
+00:06:05.680 used proxy is rful that you can easily
+00:06:08.479 consume your restful apis easily you
+00:06:11.199 also have the Ajax proxy you have memory
+00:06:14.800 proxy and you can and you can also
+00:06:18.400 retrieve request your data from your
+00:06:21.160 local data in memory so we have easy API
+00:06:25.319 integration for working with the hjs
+00:06:28.039 grid
+00:06:30.440 and to the end we have one community and
+00:06:33.120 support we have one extensive
+00:06:35.280 documentation so if you are getting
+00:06:37.120 started with xjs h you will see one big
+00:06:41.560 and very very good guide that you can
+00:06:44.120 get started using
+00:06:46.039 xjs uh and the grid panel guide is very
+00:06:48.960 very good you can see one exgs API doc
+00:06:52.960 that you can see all the classes you
+00:06:56.160 have inside the framework you can check
+00:06:57.919 the methods the events the properties we
+00:07:00.840 you you can use in the in this component
+00:07:03.400 and we also have one active Community we
+00:07:05.440 are on Discord server we are on stack
+00:07:07.919 Overflow so you can join our Discord
+00:07:10.720 server in the end of this presentation
+00:07:12.160 I'm going to share with you guys our
+00:07:15.160 Discord server link so you can our MVPs
+00:07:18.120 are there our the community are there
+00:07:20.080 you can learn and also help people doing
+00:07:22.639 better application on our Discord server
+00:07:25.680 so in conclusion xjs G is not just a
+00:07:28.560 tool it's a complete solution that
+00:07:30.560 adapts your needs so it offers a super
+00:07:33.840 performance with high feat risk
+00:07:36.720 components and also provide you
+00:07:38.360 flexibility and robustness to support to
+00:07:41.280 build high quality escali
+00:07:43.720 applications and so I will try yjs in
+00:07:47.919 the next time and check everything you
+00:07:51.479 have on this amazing grid
+00:07:54.080 component okay so let's now do some demo
+00:07:57.479 I'm going to to explore one hgs grid
+00:08:00.440 example we have created weeks ago so we
+00:08:03.360 have create two grid panels we have here
+00:08:08.319 on my screen the exgs grid panel using
+00:08:12.440 exgs framework one EXs framework you can
+00:08:16.400 visit this online example just Hing
+00:08:19.759 sensa.com isgd panel you're going to see
+00:08:23.360 this this grid panel in this grid panel
+00:08:26.039 we try to add as many thing we we can in
+00:08:29.720 this grid panel this grid panel seems to
+00:08:31.879 be very very rich and too many features
+00:08:34.719 inside this grid so you have one simple
+00:08:37.799 grid pen with many columns here you have
+00:08:42.159 one example how to add one icon inside
+00:08:45.959 your column how to use one
+00:08:48.640 Avatar uh component for that with your
+00:08:51.200 initials of your name we have one text
+00:08:54.399 column that will fetch the name for for
+00:08:57.800 the employee we have one age with Center
+00:09:00.760 align the the G panel we also have one
+00:09:04.040 example for how to use one icon inside
+00:09:07.240 one cell so we created one country
+00:09:09.760 column here to identify that we have one
+00:09:13.880 Department as a text cell and also we
+00:09:18.560 have one compliance streaming progress
+00:09:21.000 in this cell we added one progress bar
+00:09:23.720 inside the grid panel according to your
+00:09:25.800 record in your Jone you're going to see
+00:09:28.640 this progress and also we have one
+00:09:32.040 conditional uh when we apply one UI to
+00:09:35.440 this progress bar for example if you if
+00:09:37.880 you are greater than 50% you are going
+00:09:41.279 to be green otherwise you're going to be
+00:09:43.760 yellow so or Reds so you can also use
+00:09:48.760 conditional and applying different uis
+00:09:51.680 for your component here we also have one
+00:09:54.160 shck box to edit the records we have one
+00:09:58.959 examp how to add one link inside your
+00:10:02.040 cell so you can click here you're going
+00:10:04.160 to move to the S xjs
+00:10:07.440 page here we have one example how
+00:10:11.320 to add one conditional and add colors to
+00:10:15.000 your text according to the records for
+00:10:17.680 example if you are greater than five
+00:10:20.480 you're are going to be green or or
+00:10:23.000 yellow or red so you can do anything
+00:10:25.880 doing conditional Logics here we have
+00:10:30.120 one one micrograph here called it spark
+00:10:34.240 lines uh this graph is good to to show
+00:10:37.639 you one amount of data in one cell so
+00:10:40.720 you can add some spark lines you can use
+00:10:44.279 pie shart you can use LINE shart column
+00:10:47.399 shart Candlestick shart inside the cell
+00:10:50.200 so this is called it spark line sharts
+00:10:53.519 here you have one example how to use the
+00:10:55.839 data
+00:10:57.120 for uh formatting data according to your
+00:11:01.320 lo location you can see here on on top
+00:11:05.040 of the the grid panel we also grouping
+00:11:07.360 The Columns by Hing inside H we have
+00:11:10.639 aage and all so you can easily organize
+00:11:13.959 your grid panel using the in grouping
+00:11:17.560 column here we have one example how to
+00:11:21.040 add one data buing with one slide if you
+00:11:24.320 change this slide you're going to see in
+00:11:25.880 this example the age column cell here is
+00:11:29.480 going to move you're going to change
+00:11:31.720 accordingly so this is one example how
+00:11:34.560 to data bind your gridge with the heord
+00:11:37.800 you are editing here you have one
+00:11:40.160 example how to use one font awesome icon
+00:11:43.440 according to the
+00:11:44.959 color for example if you double click
+00:11:47.399 here I added one Color Picker inside
+00:11:50.959 this cell editor so if you change the
+00:11:57.839 color you can see all the reflections
+00:12:00.639 here you also have one another one
+00:12:04.480 editing cell here if you double click
+00:12:06.360 the cell you're going to edit this cell
+00:12:08.800 for the the the notice period you have
+00:12:12.360 one em cell also edit table for that
+00:12:17.399 here also have one another grouping
+00:12:20.839 column so absance we have winess holiday
+00:12:24.720 and also holiday all so you can see all
+00:12:28.600 the centered align this information we
+00:12:31.920 also have one ring column that you can
+00:12:34.800 easily R your record from one to
+00:12:39.480 five and also age table here you have
+00:12:43.160 the salary cell with one qens for
+00:12:46.720 matching we are using dollar here but
+00:12:49.800 you can use according to your
+00:12:51.160 localization you are using in your
+00:12:52.800 application you can this you can see
+00:12:54.839 that will be changed according to your
+00:12:57.560 localization you are using for example
+00:12:59.480 you if you are on Brazil you're going to
+00:13:01.040 see how Q Hands if you are going to in
+00:13:04.000 United States you're going to see the
+00:13:06.000 dollar Q symbol here see here you have
+00:13:10.399 one bottle inside the cell that you can
+00:13:12.600 easily handle all the the events for
+00:13:15.160 this button and work with this this
+00:13:17.399 record you are clicking so you if you
+00:13:19.440 click here you're going to verify merily
+00:13:23.639 Workman you also have one example how to
+00:13:27.639 use one floating menu when you click on
+00:13:30.480 this action column so in this float menu
+00:13:33.079 you can edit you can share you can H
+00:13:35.240 speaker so you can do anything according
+00:13:37.120 to your selected record easily in the
+00:13:40.440 end of this gridge we have one another
+00:13:44.079 action column that we are showing one
+00:13:47.079 icon and we are disabling one icon icon
+00:13:51.880 according to the age of the employee so
+00:13:56.040 if the employer age is
+00:14:00.040 greater than 18 you will see the icon
+00:14:04.279 otherwise you you won't see the icon you
+00:14:06.480 cannot change settings for this person
+00:14:08.759 so if you click here nothing will happen
+00:14:10.920 but if you click here we just show you
+00:14:13.720 one toast component on the bottom of my
+00:14:16.800 screen so this is uh The Columns of the
+00:14:20.800 grid we have one one summary here you
+00:14:25.720 can also export your gridge to Excel
+00:14:30.480 easily you can see the grid export Excel
+00:14:34.079 file here so you can export to excel to
+00:14:38.440 HML let's open this so everything is
+00:14:42.880 created by the client side you don't
+00:14:45.079 need any backend site to export your
+00:14:48.839 grid also uh the framework support dark
+00:14:52.480 mode you can switch by dark mode easily
+00:14:55.040 you can also change the colors of your
+00:15:00.000 of your components if you
+00:15:03.160 change
+00:15:04.680 the loc here our grid pen are going to
+00:15:09.000 reload and now we are loading this
+00:15:12.680 German loc here so you can see
+00:15:15.000 everything is
+00:15:17.839 translated we
+00:15:20.759 can work and also explore the example
+00:15:24.079 disable some some features
+00:15:26.920 here I'm going to move again to
+00:15:30.360 English you can also change the team for
+00:15:34.040 your grid panel so we are using the
+00:15:36.319 material team for this example but now
+00:15:39.079 I'm going to change
+00:15:40.600 to the Treon
+00:15:43.959 team the G example will be the same but
+00:15:47.120 now we are using another team
+00:15:50.040 so this is very very nice continue with
+00:15:53.839 in in our G presentation now we're going
+00:15:56.279 to explore the whole expander plugin
+00:15:58.480 let's say that you have one column
+00:16:00.199 inside your grid panel in your database
+00:16:03.199 and this column is one long test column
+00:16:06.360 so it's not good to show your long test
+00:16:08.360 on your as a column but you have one
+00:16:10.160 whole expander that you can easily show
+00:16:13.600 this this long test inside one whole
+00:16:16.120 expander you can also show one image
+00:16:20.360 everything now we have one option to
+00:16:23.920 group the column in this grid we are
+00:16:26.279 grouping this this data according to the
+00:16:28.920 department so you can see everyone we
+00:16:30.920 have 47 employees inside accouting
+00:16:33.959 Department if we scroll down here we
+00:16:36.240 have
+00:16:37.120 more to in into administration
+00:16:39.800 department have
+00:16:41.240 38 employees but now let's say that you
+00:16:47.160 you want to group by the country column
+00:16:49.959 I'm going to gr Group by this
+00:16:52.440 field now you have the count column
+00:16:55.440 grouped so we have Algeria we have
+00:16:58.920 Angola we have Argentina we have Armenia
+00:17:03.240 Austria and everything is grouped by the
+00:17:06.319 the country column so you can easy easy
+00:17:10.240 Group by any column that is groupable
+00:17:12.880 when you configure and set this inside
+00:17:15.520 your good panel
+00:17:18.160 definition uh you have we have one
+00:17:21.599 plugin one buing pluging call it filter
+00:17:23.959 bar that you can easily filter your data
+00:17:27.359 let's say that I would like to filter
+00:17:29.320 someone call it merily so here I can
+00:17:33.320 type
+00:17:34.720 merily and everyone which here you can
+00:17:38.280 specify your
+00:17:39.720 operator I am I am searching for someone
+00:17:43.240 that has merely inside the name
+00:17:46.200 something like in cycle uh database but
+00:17:50.000 you can if you would like to specify one
+00:17:51.840 Eco
+00:17:53.160 operator nothing will be fine because we
+00:17:56.600 do not have anyone who call Mer but if
+00:18:00.120 you specify
+00:18:01.600 like we have some matched records you
+00:18:04.840 can also add another operators not equal
+00:18:08.400 empty not empty and this kind of
+00:18:10.400 operators will change according to your
+00:18:14.840 column type in this example we are using
+00:18:17.240 one text column so everything will every
+00:18:20.440 all the operators will reflect only for
+00:18:22.600 text operations but now if you have one
+00:18:25.520 number you can specify for example I
+00:18:28.960 would like to to filter by everyone who
+00:18:32.600 has 95 years
+00:18:40.520 old okay so I am using the operator
+00:18:43.440 equal but I would like to to change the
+00:18:46.559 operator to less than
+00:18:49.559 95 so it's
+00:18:53.559 filtered we have one we have one example
+00:18:56.480 to use the filter using one combo box
+00:18:58.880 for that so I showed you the the text
+00:19:01.919 type the number type now I'm using the
+00:19:04.799 list type so I would like to check if we
+00:19:08.320 have some employees in
+00:19:10.880 Brazil we have one we have one you can
+00:19:13.840 see that in this in this filter by
+00:19:15.440 plugin we are filtering and combining
+00:19:17.760 multiple filters I am filtering everyone
+00:19:21.200 who is Brazilian and also is 9 and Al
+00:19:26.720 also is less than 95 years old so if you
+00:19:31.159 click here maybe we can show more
+00:19:33.840 example I'm going to to check for
+00:19:37.720 Argentina
+00:19:40.520 now let's say how many we have more guys
+00:19:43.880 on Argentina
+00:19:45.600 here you can combine the department the
+00:19:49.400 same as a the name with string
+00:19:52.400 operation in this example for the
+00:19:54.760 progress we you can see that you do not
+00:19:57.280 have any kind of
+00:19:59.640 filter operation here we disabled this
+00:20:02.880 so you can easy you can choose whatever
+00:20:05.120 you want on this plugin you can choose
+00:20:07.799 all the columns you you
+00:20:09.480 need the the filter and what kind of
+00:20:12.760 operator and what kind of filter you
+00:20:15.400 want to show on this filter bar here we
+00:20:18.960 also have one another number operation
+00:20:23.080 now we have one date
+00:20:25.720 operation weal not equal now
+00:20:29.320 given that this this column is one date
+00:20:31.440 column you are going to see this date
+00:20:33.840 picker so you can let's say that we like
+00:20:36.880 to to to check everyone who join dat is
+00:20:40.960 on this
+00:20:42.240 date no one because I am
+00:20:46.320 combining the filter if I would like to
+00:20:50.600 less than
+00:20:54.760 today or less than
+00:20:57.200 yesterday now it's it's
+00:21:00.440 working
+00:21:03.880 uh
+00:21:07.000 let's move to another filter here this
+00:21:11.400 is for number number I have already
+00:21:13.200 showed to you
+00:21:15.200 guys nothing more so we we explored the
+00:21:18.360 filter by plugin so you can easily
+00:21:20.640 easily add one
+00:21:22.640 filter for for your your grid penel you
+00:21:26.360 also can add one to bar with some custom
+00:21:29.360 buttons you can for example one add
+00:21:31.919 button one remove button one edit button
+00:21:34.120 on top of your grid pen to do some crude
+00:21:37.039 operations so it's very easy uh in this
+00:21:40.240 example we also showing how to use icons
+00:21:44.000 in your grouping let's say that you'd
+00:21:45.559 like to do some action with these Five
+00:21:48.559 Guys here inside Albania grouping let's
+00:21:52.320 say that you would like to print or show
+00:21:54.679 some graphics some shart for that so in
+00:21:57.880 this example are showing how to work
+00:21:59.559 with charts as well so we can see one
+00:22:03.240 pie chart for that for this grouping for
+00:22:07.520 the seven employees here one bar
+00:22:15.279 chart one
+00:22:17.480 another line
+00:22:24.279 chart if you would like to see more
+00:22:26.600 examples you can click here and you're
+00:22:28.679 going to be directed to our kitchen syn
+00:22:31.520 example you can explore all the exgs
+00:22:34.400 components and sharts inside this
+00:22:36.640 kitchen syn example so try it on when
+00:22:39.720 you have a good time uh if You' like to
+00:22:44.200 print this seven employees here we
+00:22:46.559 created one small icon here that if you
+00:22:48.679 click you are going to Loop all the
+00:22:50.760 grouping all the employees inside this
+00:22:53.200 group and you have the access to all
+00:22:55.320 this record here so you can do anything
+00:22:57.360 with this with this data so in this
+00:22:59.320 example are just showing one popup
+00:23:02.039 showing the name of the the seven
+00:23:04.279 employees on this
+00:23:06.480 group
+00:23:08.000 uh you can also use this checkbox to
+00:23:12.279 select all column this is one selection
+00:23:14.960 model feat we have inside the hjs
+00:23:18.279 grid I'm going to move to the material
+00:23:26.799 design so you can select all the data
+00:23:31.360 you can
+00:23:33.679 resize the grid columns you can drag and
+00:23:37.279 drop and
+00:23:39.200 organize your
+00:23:42.440 columns we
+00:23:44.320 also can group for M grouping fter if
+00:23:48.640 you click on this second tab you're
+00:23:50.400 going to you can drag the count column
+00:23:53.480 you can drag the department column now
+00:23:57.240 you have one m M groping filter inside
+00:23:59.799 this grid the same we will F the same
+00:24:02.159 data but now we are going we are just
+00:24:04.200 showing how to M groping your grd panel
+00:24:07.559 just draging and drop to this to this
+00:24:10.440 drop area and it's okay uh in this in
+00:24:14.039 this screen you're going to see how to
+00:24:16.120 add colors inside your cell according to
+00:24:19.400 your to the to to some record for
+00:24:22.240 example I'm am adding one conditional
+00:24:25.640 here if the age is greater than 18 we
+00:24:28.399 will be green if less than 18 years old
+00:24:31.480 will be head and if the age is greater
+00:24:35.360 than 60 years old you'll be yellow
+00:24:40.600 so this is one example how to do
+00:24:43.520 conditional things inside cell in the
+00:24:46.520 end of this this presentation I'm going
+00:24:47.880 to explore the the sear code with this
+00:24:50.559 this G Peno and this SE code is already
+00:24:53.520 available in our GitHub you can download
+00:24:55.960 and clone this example
+00:24:59.960 and explore yourself and use as one
+00:25:03.480 reference to to create your new new
+00:25:06.480 beautiful application and here we have
+00:25:09.000 one pivot grid this kind of pyot grid is
+00:25:12.120 something very very cool inside the HS
+00:25:14.880 because sometimes you need to show and
+00:25:17.120 you need to to analyze some kind of data
+00:25:20.360 but you cannot easily do that using the
+00:25:23.080 the simple grid let's say that you would
+00:25:25.640 like to see one Hort that you would like
+00:25:28.039 to show how many sales how many what is
+00:25:31.840 the Rue price of all the company for
+00:25:35.080 some some sales person or something like
+00:25:37.760 that it's very hard to to analyze this
+00:25:39.840 kind of data here and using pivot grid
+00:25:42.320 you can do the same the Exel use for the
+00:25:44.880 dynamic tables so here in the the pivot
+00:25:48.240 grid we have the
+00:25:50.360 person the employee the company the
+00:25:54.360 country and you see all the data
+00:25:57.159 according to the person on the country
+00:25:58.919 and the data and the date so for example
+00:26:03.399 for this here if you can you can expand
+00:26:06.480 you're going to explore in details all
+00:26:09.159 the
+00:26:10.080 report you can collapse the the year so
+00:26:13.840 I know that Andrew in meta
+00:26:17.240 company in
+00:26:19.440 Brazil on this
+00:26:22.279 year the value was
+00:26:26.679 500 if you would like to explore what
+00:26:29.559 months on this on this year you can
+00:26:32.840 expand this column now I
+00:26:37.559 know that was on
+00:26:41.399 April only
+00:26:43.440 April he sold
+00:26:46.159 something so you have one sub total here
+00:26:50.559 so the P you can easily show your data
+00:26:54.600 and you do not need to do this all this
+00:26:57.039 calculation on your back end you just
+00:26:59.240 need
+00:27:00.360 to uh you just need to give the hjs
+00:27:05.200 one one Jone with all your data all all
+00:27:08.799 your sales data for example and the hgs
+00:27:11.919 you're going to calculate everything and
+00:27:14.200 create this beautiful data set for you
+00:27:16.720 you don't need to calculate and send
+00:27:19.360 this calculated information to exgs xjs
+00:27:22.840 will do everything for you you just need
+00:27:24.480 to send the the the how js on and
+00:27:27.679 everything will be gring according to
+00:27:29.880 your configuration inside your grid
+00:27:31.600 panel you need to specify the axis the
+00:27:34.159 top axis the left axis the
+00:27:36.640 aggregators uh fields and everything
+00:27:39.000 will will work you can use the
+00:27:41.799 configurator so you can easily configure
+00:27:44.159 your your grd pen you can drag and drop
+00:27:46.760 columns here you if you like to remove
+00:27:49.919 the
+00:27:50.679 company and click done now we do not
+00:27:53.720 have the company anymore we just have
+00:27:55.519 the country so the configurated progr
+00:27:58.399 it's easy to use and you can adjust your
+00:28:02.679 your view according to your preference
+00:28:05.000 so let's say that someone inside your
+00:28:06.799 comp would like to see another
+00:28:09.000 perspective of the your data so using
+00:28:11.440 the configurator he can
+00:28:13.559 easily H build new new reports for that
+00:28:17.039 and also drag and drop remove some
+00:28:19.080 labels add some labels some aggregators
+00:28:21.480 if you click double click here you can
+00:28:24.240 you can sort you can disable filtering
+00:28:29.080 you can do a lot of things with the
+00:28:30.840 configurator plugin if you double click
+00:28:33.760 the example we also have one new plugin
+00:28:36.000 here call it dral if you click if you
+00:28:39.600 double click and like to know every
+00:28:41.960 sales on Brazil for Andrew if you'd like
+00:28:44.919 to explore all the sales remember I said
+00:28:48.200 you that you just need to retrieve all
+00:28:50.960 the data so he is the data so the all
+00:28:54.200 the sales numbers from from Andrew in
+00:28:57.760 Brazil
+00:28:58.960 was
+00:29:00.399 this if you double
+00:29:03.000 click
+00:29:04.720 here we have three sales
+00:29:07.600 here so this is the D Dow plugin that
+00:29:10.679 you can use inside your your pivot G you
+00:29:14.640 can also customize your sales inside
+00:29:16.399 your pivot GD in this example we created
+00:29:18.919 one link so if you click here you can do
+00:29:20.880 anything you can let's say that you'd
+00:29:22.960 like to open another screen when you
+00:29:24.640 click on this cell you can easily access
+00:29:27.320 your heord
+00:29:28.840 and do something cool with this fter you
+00:29:33.480 can also export your pivot grid when
+00:29:36.320 using pivot grid the same I show you on
+00:29:40.399 the the simple grid example now you can
+00:29:43.840 use the the export functionality so
+00:29:47.840 let's say that you would like to export
+00:29:49.880 the pivot table definition take a look
+00:29:52.720 here you're going to export everything
+00:29:54.679 is using front end solution everything
+00:29:56.960 is made on client don't need back end
+00:29:59.320 again I say to
+00:30:01.360 you uh
+00:30:07.960 oops um so I I do not have Excel here
+00:30:11.240 but if you open the downloaded file here
+00:30:14.559 you can see the the spreadsheet on your
+00:30:17.760 Excel file you can also explore some
+00:30:20.799 features you can collapse you can
+00:30:25.320 expand hostes only columns only
+00:30:29.039 you can work with that and explore this
+00:30:31.799 example so this example was made using
+00:30:34.519 exgs framework this is one complete hjs
+00:30:37.679 example and we have create the same
+00:30:39.960 example Now using react so we have the
+00:30:44.440 hea example here you can see this the
+00:30:47.640 same example but this application you
+00:30:50.200 can visit this application on sensa.com
+00:30:53.039 react grid we have the same sample doing
+00:30:57.440 the same thing but now using he
+00:30:59.639 framework and we create and we are
+00:31:02.200 launching the he package that you can
+00:31:05.720 easily use exgs components inside your
+00:31:09.080 he application so for you guys that you
+00:31:11.559 are searching for you'd like to use exgs
+00:31:14.279 and you you have one hea project now
+00:31:16.679 it's time to use our beautiful and hit
+00:31:20.240 components inside your hea application
+00:31:22.360 using the hea
+00:31:24.039 package uh so the example is almost the
+00:31:27.519 same I don't waste time uh presenting
+00:31:31.080 again now I'm going to move to search
+00:31:34.519 code exploration for both example for ex
+00:31:38.760 JS and hex
+00:31:41.799 example okay so you guys if you would
+00:31:44.120 like to download and clone uh the
+00:31:47.679 hjs example you can find on our CA i
+00:31:52.240 exgs iPhone example account and exgs GD
+00:31:56.519 example you can
+00:31:58.760 clone all the search code of the gridge
+00:32:01.720 panel and the same for hea
+00:32:08.159 application so you can try the the the
+00:32:11.080 the search code I'm going to open my vs
+00:32:14.760 code now and let's explore how
+00:32:18.679 everything was made and how we can
+00:32:20.279 easily work
+00:32:22.320 with our grid panel let's start with the
+00:32:25.320 exgs grid panel search code you can see
+00:32:28.120 here that we have one simple application
+00:32:31.399 extr uh made using npm so we have the
+00:32:35.440 app folder you have
+00:32:40.919 the the app Jone file that everything
+00:32:43.440 knows about this file so in this file we
+00:32:46.480 created in this example we are showing
+00:32:48.519 how to use much localization for for
+00:32:51.080 your application you can use uh
+00:32:53.440 different teams so you can check this
+00:32:55.480 file and explored so you can do the same
+00:32:57.919 this as a reference so you can easily
+00:33:01.360 explore this file and check what we made
+00:33:03.880 for to share with you uh let's open the
+00:33:08.360 app The View we
+00:33:11.960 have the grid for desktop for phone one
+00:33:17.399 thing I forgot to show you guys this
+00:33:19.519 grid panel also work with your tablets
+00:33:24.039 so let's say that
+00:33:29.960 you would like to show this on one
+00:33:39.120 iPad take a
+00:33:42.960 look it's
+00:33:46.080 okay everything will work in any device
+00:33:51.000 both for and ejs you can also use your
+00:33:55.320 smartphone for displaying this kind of
+00:33:58.399 data of course one grid pen is not good
+00:34:01.519 for smartphone because you have a bunch
+00:34:05.039 of data it's not not comfortable to see
+00:34:09.320 this kind of data on your smartphone but
+00:34:11.399 you can use it uh for smartphone usually
+00:34:15.079 I use the least component for showing
+00:34:18.639 data but here you can
+00:34:21.119 see different different behaviors
+00:34:23.800 according to your device if you're using
+00:34:25.800 your mobile you're going to see this
+00:34:27.159 floating action sheet
+00:34:33.800 here so the example Works in end device
+00:34:37.440 this is the best thing uh let's move
+00:34:40.239 into our vs code and explore again the
+00:34:42.679 search code so here in our app view
+00:34:46.119 folder we have the gridge the first step
+00:34:48.960 is the complex grid you can see we have
+00:34:51.800 one grid panel and take a look how
+00:34:54.239 easily and we are just using plugins to
+00:34:56.800 give power to our grid panel we are
+00:34:59.560 using plugin for paging to bar for the
+00:35:02.359 summary we are specifying the store and
+00:35:05.680 where the data is located how to fetch
+00:35:08.119 this data we are using a sorter we are
+00:35:11.240 using some tools for that that tool that
+00:35:13.880 we added in our
+00:35:17.640 grouping the select table configuration
+00:35:20.560 we have some platform configures
+00:35:22.160 according to your device if you'd like
+00:35:23.920 to add some features according to
+00:35:25.520 desktop you can do the platform config
+00:35:27.760 big for that if you are if you are
+00:35:30.000 running on desktop this plugin will be
+00:35:32.320 available if you are not using desktop
+00:35:34.520 this another kind of plugin will be
+00:35:37.520 available
+00:35:39.320 um for example you can see the GD Ed
+00:35:42.520 table plugin is is
+00:35:45.560 available for the tablet mode let's move
+00:35:49.359 into tablet
+00:35:54.160 again okay reload the page
+00:35:59.880 I'm going to double
+00:36:03.760 click let's check if you are
+00:36:09.240 available I'm going to move
+00:36:15.440 to here for examp in this example I I
+00:36:19.079 add the sell Ed but in the second
+00:36:21.480 example if you double click you can
+00:36:23.720 easily do some operation you can change
+00:36:25.920 the date you can change everything you
+00:36:27.920 you you you want to show here and submit
+00:36:31.079 or you can delete this record this this
+00:36:34.240 record is deleted now I changeed the
+00:36:36.839 date subit so this is you just to to to
+00:36:40.280 do this in inside thej is very very easy
+00:36:44.160 you have one complete operation for
+00:36:45.920 creating deleting fetching data inside
+00:36:48.880 one small plugin so this kind of plugin
+00:36:52.839 is called it g Edge table so you just
+00:36:56.599 need specify the plug in Grid Ed table
+00:36:58.680 when you specify this grid Ed table
+00:37:00.839 plugin as true you are going to when
+00:37:04.680 when you are declaring defining your
+00:37:06.800 your columns you can specify if this
+00:37:09.200 column is editable or not so let's say
+00:37:12.480 that our age column you want this should
+00:37:15.920 be editable so if you specify that this
+00:37:18.920 column is
+00:37:20.560 editable your plugin will consider this
+00:37:23.400 column and show the number field when
+00:37:27.160 you double
+00:37:30.760 click here so in this in this in this
+00:37:33.640 grid panel we have the age the Emil and
+00:37:36.079 the salary as a editable column the
+00:37:39.520 other columns are not editable but You'
+00:37:41.480 like to add new columns you just just
+00:37:43.680 need to specify on your column
+00:37:45.680 definition if this column will be
+00:37:47.480 editable or not for example the C is not
+00:37:50.640 edit table so you specify Ed table as
+00:37:53.480 false and we also have
+00:37:56.280 the the the groped gridge here the same
+00:38:00.440 thing the same approach using plugins
+00:38:04.880 using items as a to bar on top The
+00:38:08.240 Columns definition cell which get cell
+00:38:12.359 so we can explore the searce code now
+00:38:15.240 I'm going to show you the hea example
+00:38:17.960 search code that we are doing the same
+00:38:20.240 thing if you are new on he you can try
+00:38:24.560 and request your evaluation for he in
+00:38:27.960 our s website you can go to our website
+00:38:33.440 and select react and you're going to f
+00:38:35.760 the form you're going to receive one
+00:38:37.920 trial key that you can use the he
+00:38:40.839 package inside your he application to
+00:38:43.160 get started you have one documentation
+00:38:45.839 already available on docs. s.com you can
+00:38:49.160 select the hea product and you can
+00:38:51.720 easily get started how to create your
+00:38:53.960 first application using he package
+00:38:59.160 uh okay so let's explore the he this is
+00:39:04.720 one kind of he application extr one
+00:39:08.800 package Jone file here everyone who
+00:39:11.720 works with he will know this file we
+00:39:14.440 have the SE we have the sear folder here
+00:39:17.680 that you're going to accommodate all the
+00:39:20.040 files you have the
+00:39:22.920 app we have the index I'm going to
+00:39:26.599 explore the some context we created one
+00:39:30.800 app store context to to store the team
+00:39:33.000 the to the loc information here so this
+00:39:36.599 is one py he search code we have the
+00:39:41.079 maybe the the most important file here
+00:39:43.760 that is the ex provider you you can see
+00:39:48.319 uh you you can add your your trial key
+00:39:51.520 for that and easily using your your
+00:39:55.040 component inside hea you have the global
+00:39:56.960 contest
+00:39:58.160 that you can add the App Store the T
+00:40:00.880 provider the ex provider and everything
+00:40:03.920 now now let's check how we can create
+00:40:08.160 exgs components for that so we have the
+00:40:12.640 main
+00:40:14.240 layout the main layout is one one
+00:40:17.640 function that will export the main
+00:40:19.839 layout easily with the main view this is
+00:40:23.480 the main two bar and how the components
+00:40:27.400 was created we have
+00:40:30.079 the you can also use the model the same
+00:40:33.560 way you program in hjs you can add
+00:40:36.160 models you can add stores and just need
+00:40:39.880 to use this to require some required
+00:40:44.200 classes inside
+00:40:46.000 he uh you you have one Employee Store
+00:40:50.680 here
+00:40:52.359 now let's
+00:40:54.280 check the view the grid pain
+00:41:03.760 take a look here we have the
+00:41:06.839 he here you can see the he component
+00:41:10.160 that we are using the X Type table and
+00:41:12.440 all the exgs configuration will be
+00:41:15.200 hosted on the config property for this
+00:41:18.160 component so let's see you are using the
+00:41:21.599 one tab bar one G panel one grit panel
+00:41:25.200 and the pivot here now let's explore
+00:41:28.440 this GD
+00:41:29.640 complex component inside he take a look
+00:41:34.319 so to create one ejs component inside he
+00:41:37.280 you just need to create this function
+00:41:39.200 and return the he instance specify your
+00:41:43.800 X type and all the configuration you
+00:41:46.800 want to add to your grid panel according
+00:41:48.880 to G
+00:41:50.680 exgs framework you can you can specify
+00:41:53.560 inside the config and everything will
+00:41:56.440 work and you can also use the view the
+00:42:00.599 mbvm structure you can use view
+00:42:02.920 controller view model the same way you
+00:42:05.839 are using for exgs you can use on he the
+00:42:09.839 same code the same code so the main the
+00:42:14.000 the the the main difference and the main
+00:42:16.920 information is how to create the
+00:42:18.640 component so you just need to create the
+00:42:20.280 component and he turn the he component
+00:42:22.680 and inside that to specify your X type
+00:42:24.960 everything is similar to yjs so now you
+00:42:28.079 are able to use the amazing and richful
+00:42:32.160 components that we have inside the xjs
+00:42:34.240 framework inside your hea application so
+00:42:36.559 you guys if you are a hea developer
+00:42:38.880 welcome to this word welcome to hea you
+00:42:41.240 can try it on uh and give us your
+00:42:45.400 feedback with this component you can Us
+00:42:47.720 in with react you can use localization
+00:42:49.800 you can use all the components with the
+00:42:51.800 hea you can use the the calendar you can
+00:42:54.520 use the grid you can use both to keep
+00:42:58.040 classic and modern uh you can use the
+00:43:01.640 package you can use the sharts all the
+00:43:03.720 components we have inside the xjs and
+00:43:05.480 the features you can use inside hea in a
+00:43:08.160 easy way all right so uh I hope I I have
+00:43:12.640 more time to to explore and show you
+00:43:14.480 more good things here but I guess this
+00:43:16.680 presentation will show you one overview
+00:43:19.280 what we have made it for for the GD
+00:43:21.319 panels for the he for the xjs grid so
+00:43:23.920 it's now time for you to go to our
+00:43:26.400 repository go go to our online example
+00:43:28.880 and explore and do your best GED inside
+00:43:31.520 your your software uh using this
+00:43:34.119 reference and so if you are looking for
+00:43:37.040 one good gridge component exgs is here
+00:43:40.880 you can use it for both Frameworks all
+00:43:45.000 right um okay
+00:43:48.040 so let's move to
+00:43:52.920 the I guess we have more 15 minutes to
+00:43:57.359 to end this this webinar so I would like
+00:43:59.760 to thank you for joining this this
+00:44:01.800 webinar it's also a pleasure to to
+00:44:03.960 present this kind of cool things with
+00:44:06.040 you guys uh thanks for the community for
+00:44:09.119 the MVPs and all the customers that are
+00:44:11.960 joined this call so if would like to
+00:44:13.839 connect with me here's my linkage in my
+00:44:16.040 email my GitHub if would like to to
+00:44:19.000 check the project searce code is the URL
+00:44:22.160 that you can explore the hgs example and
+00:44:25.960 if you'd like to check the online
+00:44:28.559 example you can hit sensa.com
+00:44:32.280 panel and thank you for that now I going
+00:44:35.400 to to move to our question and answers
+00:44:38.880 session but before that I would like to
+00:44:41.200 invite you guys to our community and
+00:44:43.480 join our Discord server if you are
+00:44:45.920 looking for a community engagement would
+00:44:47.559 like to help or learn and share your
+00:44:49.880 exgs knowledge with experts join our St
+00:44:53.800 Discord now and be part of our community
+00:44:57.240 I am there our Sensa MVP is there are
+00:45:00.920 there s developers are there so you can
+00:45:03.200 expand your awareness of Sensa products
+00:45:05.440 so you can scan this QR code here and
+00:45:08.480 can go to the your in our Discord server
+00:45:11.200 you can post question you can engage
+00:45:14.440 with our community so give a try for
+00:45:17.200 that okay so now we are going to open
+00:45:21.119 the question and answers if you guys
+00:45:23.359 have some some questions feel free to to
+00:45:26.319 ask here I going to try to reply
+00:45:28.480 everyone so thanks for joining again and
+00:45:31.000 thanks and see you in the next
+00:45:34.000 time awesome thank you thank you for
+00:45:37.440 sharing the tips a a really complex
+00:45:40.359 grade that really work for Exel and
+00:45:42.720 react thank you for building this and
+00:45:44.319 showcasing that today awesome let's take
+00:45:47.240 some questions myself Raj here I'm a
+00:45:49.680 marketing manager at now let's move
+00:45:52.680 on the Q&A sessions if you have any
+00:45:55.280 questions please type them into the
+00:45:57.559 chart you know we will address them as
+00:45:59.400 many as we can are you ready womon let's
+00:46:02.760 take some questions
+00:46:05.200 yeah sure the first question we have are
+00:46:08.160 there any limitations uh for extjs
+00:46:11.680 components available in
+00:46:14.119 rexd no there's no limitation for ex for
+00:46:17.640 exgs usage inside he all the the
+00:46:20.559 framework all the modern to kit and
+00:46:23.480 classic to Kit are available on he so
+00:46:26.559 you just just need to specify the to Kit
+00:46:29.640 you you may use on your application
+00:46:31.680 everything will work so there's no
+00:46:33.400 limitation of course you need your
+00:46:35.119 license you can do one trial but you
+00:46:37.000 need to be you have one commercial
+00:46:38.960 license to use each component for
+00:46:40.559 example let's say that you would like to
+00:46:41.880 use the calendar the pivot grid the
+00:46:43.880 pivot exporter the D3 component you need
+00:46:47.359 to one Enterprise plan for that but if
+00:46:51.040 you have one
+00:46:52.440 hjs uh license you can easy you can
+00:46:55.800 easily use that according to your
+00:46:59.480 license thank you thank you for
+00:47:01.319 answering that the next question we have
+00:47:02.960 here how to export a tree panel
+00:47:07.400 grade okay
+00:47:09.640 so
+00:47:11.839 uh I'm going to show you the example
+00:47:16.079 here to export your grid panel data it's
+00:47:20.240 very very easy and you are using One
+00:47:22.160 Premium component for that called
+00:47:24.680 exporter let's say I'm going to show you
+00:47:27.839 the app
+00:47:29.480 view GD let's say that we're going to
+00:47:32.880 show the complex we have created this
+00:47:35.119 example in our complex grid panel so
+00:47:39.119 when open the grid panel we are using
+00:47:42.000 this plugin we are requiring the
+00:47:44.079 exporter plugin here let's check where
+00:47:46.200 is that here you just need to require
+00:47:48.680 your exporter plugin now you need
+00:47:52.400 to
+00:47:54.240 set your plugin here for example if you
+00:47:57.480 are using desktop we are using the ex
+00:48:00.480 exporter the grid exporter you can
+00:48:02.839 specify exporter
+00:48:05.359 through and now for example for each
+00:48:09.040 column you can specify some kind of
+00:48:12.800 information for the export stuff for
+00:48:15.520 example let's say that you don't like
+00:48:17.079 you don't like to export one specific
+00:48:20.040 column you can remove and ignore on on
+00:48:23.800 export this this column you can do some
+00:48:27.079 styles for that and he is the the search
+00:48:30.599 code for the export for example when you
+00:48:33.720 click on the export
+00:48:36.400 button you
+00:48:40.240 have where is the seource code for
+00:48:44.440 that export document take a look how is
+00:48:47.920 easy to export your document using this
+00:48:50.000 kind of plugin you just need when you
+00:48:51.480 click on the export button you're are
+00:48:53.480 going to to use the you get your view in
+00:48:56.839 in this case the view is your grid panel
+00:48:58.920 and you you call the save document as
+00:49:01.520 method specifying the config here and we
+00:49:05.240 are going to to to give the title and
+00:49:07.359 the file name and exgs will do
+00:49:09.599 everything for you according to your
+00:49:11.599 grid configuration so with this three
+00:49:14.400 pieces of code you can easily export
+00:49:16.720 your grid data using the export method
+00:49:19.799 specifying the plugin requiring the
+00:49:21.480 plugin and configurating your columns
+00:49:24.319 according to your exporter needs
+00:49:28.040 okay thank you thank you for the detail
+00:49:30.520 explanation the next question we have
+00:49:32.760 here can we replace EXs routed with
+00:49:36.520 react rout using
+00:49:38.480 vxt yes you you are you are not blocking
+00:49:41.160 to to to not use any kind of good
+00:49:43.799 features you you may have in you can
+00:49:46.319 easily use you don't need to use the
+00:49:49.000 holder but if like if you better using
+00:49:51.119 the ehds hold you you you can use it
+00:49:53.680 well but if you if your application are
+00:49:56.720 already using the the reaction hter you
+00:49:59.359 can easily Implement
+00:50:01.079 yourself uh the solution you can easily
+00:50:04.000 use another kind of package inside when
+00:50:06.640 you are using he you don't need to use
+00:50:08.480 only exgs component the exgs comp is
+00:50:11.359 just one Bridge so you can easily using
+00:50:13.680 third parties components and libraries
+00:50:16.440 given that you are inside your your hea
+00:50:19.799 application so you can the answer for
+00:50:22.119 that is yes you can
+00:50:23.520 replace thank you thank you very much uh
+00:50:26.119 the next question is grid configuration
+00:50:28.280 addon an extra plugin like grid
+00:50:33.960 exporter sorry again yeah sure is a GD
+00:50:37.760 configuration at all and extra plugin
+00:50:41.240 like GD
+00:50:45.119 exporter I guess this question is not
+00:50:48.119 clear for me you asking if the GD
+00:50:50.520 configuration
+00:50:52.400 addon
+00:50:53.920 for yeah the question is you know yes I
+00:50:57.240 guess I I guess I understand the
+00:50:58.960 question now I guess this guy is asking
+00:51:02.000 if the configurator for the pivote grid
+00:51:04.079 is one I don't like the exporter yes for
+00:51:07.119 example I guess he's asking something
+00:51:09.799 like this let's say that we have the
+00:51:12.319 pivot grid and the
+00:51:14.559 configurator so the configurator is one
+00:51:17.040 plugin for the pivot grid I'm going to
+00:51:18.920 show you and how to is do that in our
+00:51:22.640 example you have the pivot you have the
+00:51:25.880 pivot grid definition you just need to
+00:51:28.440 require the same thing we did for the
+00:51:31.200 exporter you can do the for the pivot
+00:51:33.559 grid because the the configurator the
+00:51:35.520 drill plugin the hange editor is one
+00:51:37.720 plugin for the pivot grid so you just
+00:51:40.079 need to require this class the
+00:51:43.480 configurator in your pivot grid
+00:51:45.720 definition you just need to specify that
+00:51:48.040 You' like to use the pivot configurator
+00:51:50.280 as
+00:51:52.000 true and we have on our
+00:51:56.920 on our pivot grid one two bar and you
+00:52:01.119 have the configurator
+00:52:04.240 button where is the configurator
+00:52:07.000 button okay we have the configurator
+00:52:09.599 button here when you click on this
+00:52:11.440 configurator button we are just showing
+00:52:13.079 the configurator now I'm going to move
+00:52:15.079 to our view controller and check what we
+00:52:18.319 programmed on on this show
+00:52:20.520 configurator the show
+00:52:22.640 configurator method is just one line you
+00:52:25.920 just need to get get your grid panel
+00:52:27.720 your pivot grid then show configurator
+00:52:30.119 because you are already using the plugin
+00:52:32.599 you just required on top of this class
+00:52:35.359 you you are using the configurator and
+00:52:37.599 you specify that you would like to use
+00:52:39.559 this plugin inside your grid panel
+00:52:41.720 adding this plugin
+00:52:43.480 here the P pivot configurator the pivot
+00:52:46.880 exporter the pivot out this this apply
+00:52:49.559 to the all the plugins so as soon as I I
+00:52:52.559 add this plug to my component I can
+00:52:54.799 easily use it and the call for the
+00:52:57.280 configurate is just you just need to get
+00:52:59.319 your pivot grid and call the show
+00:53:01.960 configurator method and you're going to
+00:53:05.160 see this nice result you click on the
+00:53:08.880 configurator and now the configurator is
+00:53:11.000 show because you are using this plug I
+00:53:13.119 hope I answered this
+00:53:15.599 question thank you the next question we
+00:53:18.440 have here how does Rea maintain high
+00:53:21.640 performance when working with large data
+00:53:24.680 sets and the complex in interfaces in
+00:53:28.040 react
+00:53:30.119 application ask again please so how does
+00:53:33.720 react Rea maintain high performance for
+00:53:36.640 large data sets the same way we use for
+00:53:40.200 exgs nothing's change you can use the
+00:53:43.640 store the the proxy the model so nothing
+00:53:48.440 change that the same performance you
+00:53:50.119 have on ejs application will be you have
+00:53:54.960 on herx so nothing Chang in terms of
+00:53:57.119 performance is the same way to load data
+00:53:59.799 you can use the the proxy the the heer
+00:54:03.720 so according to your data in your server
+00:54:05.960 you're going to to fetch this data and
+00:54:08.520 show in in your grid pen using the same
+00:54:10.960 way you use on xjs you can specify the
+00:54:13.799 proxy the data uh the store I I can show
+00:54:17.720 you easily here for example on the he
+00:54:23.760 example we have the view grid
+00:54:30.000 complex on this
+00:54:32.119 component uh you can also use the
+00:54:35.200 plugins in this compan using one store
+00:54:38.280 and in this store we have you can see
+00:54:41.440 that
+00:54:42.839 uh using this x store this store here
+00:54:46.240 and in this store you are going to fetch
+00:54:48.319 the data in this kind of example we are
+00:54:50.160 using some local data but you can easily
+00:54:53.240 change uh your data location to your
+00:54:56.440 draw another backand and everything will
+00:54:58.960 be okay um let me check where is the
+00:55:02.960 store for
+00:55:04.720 that component
+00:55:06.760 CJs
+00:55:08.400 model this is the model for that mapping
+00:55:11.319 all the fields and we have the store for
+00:55:15.520 that so you just need to specify your
+00:55:19.000 URL and everything will be handed inside
+00:55:22.000 your grid panel easily you can specify
+00:55:24.440 where your data is located your end
+00:55:26.680 point for that and everything will be
+00:55:28.960 fetched and handled inside your P the
+00:55:31.240 same way you using
+00:55:33.000 hjs no paying for
+00:55:35.480 that great thank you very much um the
+00:55:38.319 next question we have here um like for
+00:55:41.640 example someone is want to switch to or
+00:55:45.079 looking to adopt re extend into their
+00:55:47.520 existing projects what kind of support
+00:55:50.280 or documentation is available for
+00:55:52.799 developers all right so we are about L
+00:55:56.760 One reach documentation for that but you
+00:55:58.559 can explore the documentation for for he
+00:56:03.079 here we can go to docs. sensa.com
+00:56:08.520 let's get started here you're going to
+00:56:11.599 see this Ling page for our documentation
+00:56:14.039 you can see all the product s has and he
+00:56:17.599 actually just added here the he actually
+00:56:20.440 component you
+00:56:22.440 can you have one
+00:56:24.760 introduction how to get started so you
+00:56:27.200 can npm style s if you are trial custom
+00:56:30.440 you can easily try it on you can npm
+00:56:33.400 style from the public npm if you are one
+00:56:36.039 active customer you just need to use
+00:56:37.799 your support portal credentials you can
+00:56:40.119 npm log to that install Sensa react
+00:56:45.039 package if You' like to use to create
+00:56:47.599 one react application using using Create
+00:56:52.000 hea app you can run this comments you
+00:56:55.079 you after that you just need to install
+00:56:57.359 the the hea latest version you just need
+00:57:00.280 to cop this sample files here to your
+00:57:03.920 application and just npm start H when
+00:57:06.880 you feel the the form assessing the
+00:57:10.880 centia when you when you when you fill
+00:57:13.960 the form here for the he you're going to
+00:57:16.799 receive one email with
+00:57:18.599 your trial key to use the the hea trial
+00:57:23.720 version so if you get for example
+00:57:26.799 get started you just need to fill this
+00:57:28.720 form and you are going to to receive one
+00:57:31.000 we with your key and after that uh you
+00:57:34.280 you are going to to add to your
+00:57:36.559 application and work well so this is the
+00:57:39.440 documentation for the the he and also
+00:57:42.400 you can find the documentation and the
+00:57:44.200 npmjs registry and the the package is
+00:57:47.079 called Sensa in in the S scope call it
+00:57:50.640 the react here you have one table of
+00:57:53.599 contents of example kickstart how to
+00:57:56.520 install troubleshooting how you get your
+00:57:58.880 trial key the documentation using
+00:58:01.200 overrides how you can use overrides the
+00:58:03.359 same way you use in hjs you can use for
+00:58:06.480 he he is the he
+00:58:10.440 example if if I looking for more example
+00:58:13.359 using
+00:58:15.920 heex is
+00:58:18.359 the the
+00:58:20.760 example
+00:58:22.440 uh and this is the a documentation we
+00:58:25.280 have so you you can find documentation
+00:58:27.200 on our npmjs registry and also in the
+00:58:31.000 documentation inside s domain all right
+00:58:34.760 great thank you I think we are just
+00:58:36.559 about the time I I think we can take one
+00:58:38.520 last question for the
+00:58:40.359 day what level of customization is
+00:58:43.280 possible with rext components and how
+00:58:46.319 how easy it is to extend or modify
+00:58:49.200 them all right uh this is uh if you are
+00:58:53.039 familiar with fjs you are going to do
+00:58:55.039 the same you are using hjs for example
+00:58:57.920 in this example here uh I created you
+00:59:03.240 guys you can see on on the the grid pen
+00:59:05.920 you could see one
+00:59:07.319 Avatar component for that so you just
+00:59:10.160 need to Define one component I just
+00:59:12.559 extend from component I created the exgs
+00:59:15.799 component
+00:59:17.200 here and now you can use
+00:59:20.559 it normally for
+00:59:23.760 example inside your company your your
+00:59:26.960 column definition I'm
+00:59:30.079 using the Avatar component here so this
+00:59:33.319 is one example how to extend and
+00:59:35.760 customize your component so you can
+00:59:37.760 create the component the same way you
+00:59:39.280 create inside the xgs the same code you
+00:59:42.400 just you don't need to to use react way
+00:59:45.000 to do that you are using xjs definition
+00:59:47.880 class definition and you are using uh
+00:59:50.680 the component
+00:59:53.400 itself all right you just need to hit
+00:59:55.839 third the he component and customize
+00:59:58.599 your configuration
+01:00:00.799 here awesome this is a really nice
+01:00:05.160 presentation that wraps up our today's
+01:00:08.160 presentation uh thank you for joining us
+01:00:10.920 and for your time we hope you found it
+01:00:13.520 valuable and
+01:00:15.000 informative thank you guys thank you see
+01:00:17.480 you on the next webinar so try to to
+01:00:20.000 join our Ser reaching you guys on this
+01:00:23.119 beautiful Community give power to our
+01:00:25.680 community engagement and we are going to
+01:00:27.880 find many experts there thank you for
+01:00:30.200 joining thank you all bye-bye

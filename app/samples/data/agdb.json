@@ -1,0 +1,52 @@
+{
+    "agents": [
+        {
+            "agentId": "TA-1234",
+            "name": "John Smith",
+            "email": "john.smith@travelco.com",
+            "region": "North",
+            "bookings": 120,
+            "revenue": 25000,
+            "rating": 4,
+            "joinDate": "2015-06-01",
+            "active": true,
+            "company": "MakeMyTrip"
+        },
+        {
+            "agentId": "TA-5678",
+            "name": "Jane Johnson",
+            "email": "jane.johnson@travelco.com",
+            "region": "South",
+            "bookings": 300,
+            "revenue": 45000,
+            "rating": 5,
+            "joinDate": "2018-09-15",
+            "active": false,
+            "company": "Yatra"
+        },
+        {
+            "agentId": "TA-9101",
+            "name": "Alex Taylor",
+            "email": "alex.taylor@travelco.com",
+            "region": "East",
+            "bookings": 200,
+            "revenue": 32000,
+            "rating": 3,
+            "joinDate": "2017-03-10",
+            "active": true,
+            "company": "Cleartrip"
+        },
+        {
+            "agentId": "TA-1122",
+            "name": "Emily Davis",
+            "email": "emily.davis@travelco.com",
+            "region": "West",
+            "bookings": 150,
+            "revenue": 28000,
+            "rating": 4,
+            "joinDate": "2016-07-20",
+            "active": true,
+            "company": "Goibibo"
+        }
+    ]
+}
